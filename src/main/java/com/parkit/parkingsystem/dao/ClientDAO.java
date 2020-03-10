@@ -23,6 +23,7 @@ public class ClientDAO {
         try {
             con = dataBaseConfig.getConnection();
             PreparedStatement ps = con.prepareStatement(DBConstants.GET_CLIENT);
+            ps.setString(1, vehicleRegNumber);
             ResultSet rs = ps.executeQuery();
             rs.next();
             test = rs.getInt(1);
