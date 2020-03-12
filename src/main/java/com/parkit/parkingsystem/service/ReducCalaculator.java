@@ -2,7 +2,7 @@ package com.parkit.parkingsystem.service;
 
 import com.parkit.parkingsystem.constants.Fare;
 import com.parkit.parkingsystem.dao.ClientDAO;
-import com.parkit.parkingsystem.dao.TicketDAO;
+
 
 public class ReducCalaculator {
     private final ClientDAO clientDAO;
@@ -12,23 +12,22 @@ public class ReducCalaculator {
     }
 
 
-    public double reducCalc(double durationTotal2, String vehicule) {
-        // this.clientDAO = clientDAO;
+    public double reducCalc(double duration, String vehicule) {
 
         if (clientDAO.getClient(vehicule)) {
-            durationTotal2 *= Fare.RECURENT_CLIENT_REDUC;
+            duration *= Fare.RECURENT_CLIENT_REDUC;
         }
-        return durationTotal2;
+        return duration;
     }
 
-    public double minTimer(double durationTotal) {
+    public double minTimer(double durationConcat) {
 
-        durationTotal -= 0.50; // Gratuité des 30 premieres minutes
-        double durationTotal2 = Math.round(durationTotal * (1.0 / 0.01)) / (1.0 / 0.01);
-        if (durationTotal2 < 0) {
-            durationTotal2 = 0.00;
+        durationConcat -= 0.50; // Gratuité des 30 premieres minutes
+        double durationTotal = Math.round(durationConcat * (1.0 / 0.01)) / (1.0 / 0.01);
+        if (durationTotal < 0) {
+            durationTotal = 0.00;
         }
-        return durationTotal2;
+        return durationTotal;
     }
 
 }

@@ -24,30 +24,29 @@ public class FareCalculatorService extends ReducCalaculator {
 <span class="fc" id="L24">        long durationInMinutes = Math.abs(outDay2 - inDay2) / 1000 / 60; //  Delta des 2 dates en Minutes</span>
         //TODO: Some tests are failing here. Need to check if this logic is correct : Ok
 
-        //boolean recurentClient = false;
-<span class="fc" id="L28">        long durationInDay = durationInMinutes / 60;</span>
-<span class="fc" id="L29">        long rest = (durationInMinutes - (durationInDay * 60)); // reste de la division pour obtenir les Minutes restantes</span>
-<span class="fc" id="L30">        double rest2 = (double) rest / 60;</span>
-<span class="fc" id="L31">        double durationTotal = durationInDay + rest2;</span>
+<span class="fc" id="L27">        long durationInDay = durationInMinutes / 60;</span>
+<span class="fc" id="L28">        long rest = (durationInMinutes - (durationInDay * 60)); // reste de la division pour obtenir les Minutes restantes</span>
+<span class="fc" id="L29">        double rest2 = (double) rest / 60;</span>
+<span class="fc" id="L30">        double durationConcat = durationInDay + rest2;</span>
 
-<span class="fc" id="L33">        double durationTotal2 = minTimer(durationTotal);</span>
+<span class="fc" id="L32">        double suppressMin = minTimer(durationConcat);</span>
 
-<span class="fc" id="L35">        double durationTotal3 = reducCalc(durationTotal2, vehicule);</span>
+<span class="fc" id="L34">        double durationTotal = reducCalc(suppressMin, vehicule);</span>
 
 
-<span class="pc bpc" id="L38" title="1 of 3 branches missed.">        switch (ticket.getParkingSpot().getParkingType()) {</span>
+<span class="pc bpc" id="L37" title="1 of 3 branches missed.">        switch (ticket.getParkingSpot().getParkingType()) {</span>
             case CAR: {
-<span class="fc" id="L40">                ticket.setPrice(durationTotal3 * Fare.CAR_RATE_PER_HOUR);</span>
-<span class="fc" id="L41">                break;</span>
+<span class="fc" id="L39">                ticket.setPrice(durationTotal * Fare.CAR_RATE_PER_HOUR);</span>
+<span class="fc" id="L40">                break;</span>
             }
             case BIKE: {
-<span class="fc" id="L44">                ticket.setPrice(durationTotal3 * Fare.BIKE_RATE_PER_HOUR);</span>
-<span class="fc" id="L45">                break;</span>
+<span class="fc" id="L43">                ticket.setPrice(durationTotal * Fare.BIKE_RATE_PER_HOUR);</span>
+<span class="fc" id="L44">                break;</span>
             }
             default:
-<span class="nc" id="L48">                throw new IllegalArgumentException(&quot;Unkown Parking Type&quot;);</span>
+<span class="nc" id="L47">                throw new IllegalArgumentException(&quot;Unkown Parking Type&quot;);</span>
         }
 
-<span class="fc" id="L51">    }</span>
+<span class="fc" id="L50">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

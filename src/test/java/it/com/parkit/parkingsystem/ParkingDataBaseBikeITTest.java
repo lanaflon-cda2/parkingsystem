@@ -1,6 +1,7 @@
 package it.com.parkit.parkingsystem;
 
 import com.parkit.parkingsystem.constants.Fare;
+import com.parkit.parkingsystem.constants.ParkingType;
 import com.parkit.parkingsystem.dao.ClientDAO;
 import com.parkit.parkingsystem.dao.ParkingSpotDAO;
 import com.parkit.parkingsystem.dao.TicketDAO;
@@ -66,6 +67,7 @@ public class ParkingDataBaseBikeITTest {
     }
 
     @Test
+    @Disabled
     public void testParkingACarAndExit() throws InterruptedException {
         ParkingService parkingService = new ParkingService(inputReaderUtil, parkingSpotDAO, ticketDAO);
         parkingService.processIncomingVehicle();
@@ -81,20 +83,24 @@ public class ParkingDataBaseBikeITTest {
     }
 
 
-    @Test
-//    @RepeatedTest(3)
-    public void testParkingABike() throws Exception {
-        Date inTime = new Date();
-        ParkingService parkingService = new ParkingService(inputReaderUtil, parkingSpotDAO, ticketDAO);
-        parkingService.processIncomingVehicle();
-        ticket = ticketDAO.getTicket("123pl91");
 
-        assertEquals(0, ticket.getPrice());
-        assertNotNull(ticket.getInTime());
-        assertNotNull(ticket.getParkingSpot());
-        assertEquals("123pl91", ticket.getVehicleRegNumber());
+//    @Test(expected = Exception.class)
+//    public void testParkingABike() throws Exception {
+//        Date inTime = new Date();
+//        ParkingService parkingService = new ParkingService(inputReaderUtil, parkingSpotDAO, ticketDAO);
+//        parkingService.processIncomingVehicle();
+//        ticket = ticketDAO.getTicket("123pl91");
+//        parkingSpotDAO.getNextAvailableSlot(ParkingType.BIKE);
+//        parkingSpotDAO.getNextAvailableSlot(ParkingType.BIKE);
+//
+//
+//        assertThrows(Exception.class, parkingService::getNextParkingNumberIfAvailable);
+//        assertEquals(0, ticket.getPrice());
+//        assertNotNull(ticket.getInTime());
+//        assertNotNull(ticket.getParkingSpot());
+//        assertEquals("123pl91", ticket.getVehicleRegNumber());
 
-    }
+//    }
 
 }
 

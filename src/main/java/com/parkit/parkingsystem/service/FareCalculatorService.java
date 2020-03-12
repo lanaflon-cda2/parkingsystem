@@ -24,24 +24,23 @@ public class FareCalculatorService extends ReducCalaculator {
         long durationInMinutes = Math.abs(outDay2 - inDay2) / 1000 / 60; //  Delta des 2 dates en Minutes
         //TODO: Some tests are failing here. Need to check if this logic is correct : Ok
 
-        //boolean recurentClient = false;
         long durationInDay = durationInMinutes / 60;
         long rest = (durationInMinutes - (durationInDay * 60)); // reste de la division pour obtenir les Minutes restantes
         double rest2 = (double) rest / 60;
-        double durationTotal = durationInDay + rest2;
+        double durationConcat = durationInDay + rest2;
 
-        double durationTotal2 = minTimer(durationTotal);
+        double suppressMin = minTimer(durationConcat);
 
-        double durationTotal3 = reducCalc(durationTotal2, vehicule);
+        double durationTotal = reducCalc(suppressMin, vehicule);
 
 
         switch (ticket.getParkingSpot().getParkingType()) {
             case CAR: {
-                ticket.setPrice(durationTotal3 * Fare.CAR_RATE_PER_HOUR);
+                ticket.setPrice(durationTotal * Fare.CAR_RATE_PER_HOUR);
                 break;
             }
             case BIKE: {
-                ticket.setPrice(durationTotal3 * Fare.BIKE_RATE_PER_HOUR);
+                ticket.setPrice(durationTotal * Fare.BIKE_RATE_PER_HOUR);
                 break;
             }
             default:

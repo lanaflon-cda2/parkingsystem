@@ -2,7 +2,7 @@
 
 import com.parkit.parkingsystem.constants.Fare;
 import com.parkit.parkingsystem.dao.ClientDAO;
-import com.parkit.parkingsystem.dao.TicketDAO;
+
 
 public class ReducCalaculator {
     private final ClientDAO clientDAO;
@@ -12,23 +12,22 @@ public class ReducCalaculator {
 <span class="fc" id="L12">    }</span>
 
 
-    public double reducCalc(double durationTotal2, String vehicule) {
-        // this.clientDAO = clientDAO;
+    public double reducCalc(double duration, String vehicule) {
 
-<span class="fc bfc" id="L18" title="All 2 branches covered.">        if (clientDAO.getClient(vehicule)) {</span>
-<span class="fc" id="L19">            durationTotal2 *= Fare.RECURENT_CLIENT_REDUC;</span>
+<span class="fc bfc" id="L17" title="All 2 branches covered.">        if (clientDAO.getClient(vehicule)) {</span>
+<span class="fc" id="L18">            duration *= Fare.RECURENT_CLIENT_REDUC;</span>
         }
-<span class="fc" id="L21">        return durationTotal2;</span>
+<span class="fc" id="L20">        return duration;</span>
     }
 
-    public double minTimer(double durationTotal) {
+    public double minTimer(double durationConcat) {
 
-<span class="fc" id="L26">        durationTotal -= 0.50; // Gratuité des 30 premieres minutes</span>
-<span class="fc" id="L27">        double durationTotal2 = Math.round(durationTotal * (1.0 / 0.01)) / (1.0 / 0.01);</span>
-<span class="fc bfc" id="L28" title="All 2 branches covered.">        if (durationTotal2 &lt; 0) {</span>
-<span class="fc" id="L29">            durationTotal2 = 0.00;</span>
+<span class="fc" id="L25">        durationConcat -= 0.50; // Gratuité des 30 premieres minutes</span>
+<span class="fc" id="L26">        double durationTotal = Math.round(durationConcat * (1.0 / 0.01)) / (1.0 / 0.01);</span>
+<span class="fc bfc" id="L27" title="All 2 branches covered.">        if (durationTotal &lt; 0) {</span>
+<span class="fc" id="L28">            durationTotal = 0.00;</span>
         }
-<span class="fc" id="L31">        return durationTotal2;</span>
+<span class="fc" id="L30">        return durationTotal;</span>
     }
 
 }
