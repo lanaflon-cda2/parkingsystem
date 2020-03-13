@@ -3,10 +3,8 @@ package com.parkit.parkingsystem.config;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.sql.*;
 import java.util.ArrayList;
 
@@ -15,9 +13,12 @@ public class DataBaseConfig {
     private static final Logger logger = LogManager.getLogger("DataBaseConfig");
 
     public Connection getConnection() throws ClassNotFoundException, SQLException, IOException {
+        String pathProperties = "resources/properties.xml";
+
         logger.info("Create DB connection");
 
-        BufferedReader br = new BufferedReader(new FileReader("resources/properties.xml"));
+        //BufferedReader br = new BufferedReader(new FileReader(pathProperties), "UTF8"));
+        BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(pathProperties), StandardCharsets.UTF_8));
         String root = br.readLine();
         String pass = br.readLine();
         br.close();

@@ -8,34 +8,37 @@ import org.apache.logging.log4j.Logger;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
-<span class="fc" id="L12">public class ClientDAO {</span>
+<span class="fc" id="L13">public class ClientDAO {</span>
 
-<span class="fc" id="L14">    private static final Logger logger = LogManager.getLogger(&quot;ClientDAO&quot;);</span>
+<span class="fc" id="L15">    private static final Logger logger = LogManager.getLogger(&quot;ClientDAO&quot;);</span>
 
-<span class="fc" id="L16">    public DataBaseConfig dataBaseConfig = new DataBaseConfig();</span>
+<span class="fc" id="L17">    public DataBaseConfig dataBaseConfig = new DataBaseConfig();</span>
 
 
     public boolean getClient(String vehicleRegNumber) {
-<span class="fc" id="L20">        Connection con = null;</span>
-<span class="fc" id="L21">        int test=0;</span>
-<span class="fc" id="L22">        boolean rec = false;</span>
+<span class="fc" id="L21">        Connection con = null;</span>
+<span class="fc" id="L22">        int test=0;</span>
+<span class="fc" id="L23">        boolean rec = false;</span>
+<span class="fc" id="L24">        PreparedStatement ps = null;</span>
+<span class="fc" id="L25">        ResultSet rs = null;</span>
         try {
-<span class="fc" id="L24">            con = dataBaseConfig.getConnection();</span>
-<span class="fc" id="L25">            PreparedStatement ps = con.prepareStatement(DBConstants.GET_CLIENT);</span>
-<span class="fc" id="L26">            ps.setString(1, vehicleRegNumber);</span>
-<span class="fc" id="L27">            ResultSet rs = ps.executeQuery();</span>
-<span class="fc" id="L28">            rs.next();</span>
-<span class="fc" id="L29">            test = rs.getInt(1);</span>
-
-<span class="pc bpc" id="L31" title="1 of 2 branches missed.">            if(test&gt;1){rec = true;}</span>
-<span class="fc" id="L32">            dataBaseConfig.closePreparedStatement(ps);</span>
-<span class="nc" id="L33">        }catch (Exception ex){</span>
-<span class="nc" id="L34">            logger.error(&quot;Error fetching next available slot&quot;,ex);</span>
+<span class="fc" id="L27">            con = dataBaseConfig.getConnection();</span>
+<span class="fc" id="L28">            ps = con.prepareStatement(DBConstants.GET_CLIENT);</span>
+<span class="fc" id="L29">            ps.setString(1, vehicleRegNumber);</span>
+<span class="fc" id="L30">            rs = ps.executeQuery();</span>
+<span class="fc" id="L31">            rs.next();</span>
+<span class="fc" id="L32">            test = rs.getInt(1);</span>
+<span class="pc bpc" id="L33" title="1 of 2 branches missed.">            if(test&gt;1){rec = true;}</span>
+<span class="nc" id="L34">        }catch (Exception ex) {</span>
+<span class="nc" id="L35">            logger.error(&quot;Error fetching next available slot&quot;, ex);</span>
         }finally {
-<span class="fc" id="L36">            dataBaseConfig.closeConnection(con);</span>
+<span class="fc" id="L37">            dataBaseConfig.closeResultSet(rs);</span>
+<span class="fc" id="L38">            dataBaseConfig.closePreparedStatement(ps);</span>
+<span class="fc" id="L39">            dataBaseConfig.closeConnection(con);</span>
         }
-<span class="fc" id="L38">        return rec;</span>
+<span class="fc" id="L41">        return rec;</span>
     }
 
 }

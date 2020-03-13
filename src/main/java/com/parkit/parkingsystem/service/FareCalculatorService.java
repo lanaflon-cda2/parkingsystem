@@ -12,7 +12,7 @@ public class FareCalculatorService extends ReducCalaculator {
     }
 
     @SuppressWarnings({"checkstyle:WhitespaceAround", "checkstyle:FinalParameters", "checkstyle:AvoidNestedBlocks"})
-    public void calculateFare(Ticket ticket) {
+    public void calculateFare(Ticket ticket) throws CloneNotSupportedException {
         if ((ticket.getOutTime() == null) || (ticket.getOutTime().before(ticket.getInTime()))) {
             throw new IllegalArgumentException("Out time provided is incorrect:" + ticket.getOutTime().toString());
         }

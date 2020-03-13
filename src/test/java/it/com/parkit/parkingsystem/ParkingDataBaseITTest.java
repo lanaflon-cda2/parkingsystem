@@ -59,7 +59,7 @@ public class ParkingDataBaseITTest {
 
     @Test
   //  @Disabled
-    public void testParkingACarAndExit() throws InterruptedException {
+    public void testParkingACarAndExit() throws InterruptedException, CloneNotSupportedException {
         ParkingService parkingService = new ParkingService(inputReaderUtil, parkingSpotDAO, ticketDAO);
         parkingService.processIncomingVehicle();
         Thread.sleep(2000);
@@ -76,7 +76,7 @@ public class ParkingDataBaseITTest {
 
     @Test
  //  @Disabled
-    public void testParkingACar() throws InterruptedException {
+    public void testParkingACar() throws InterruptedException, CloneNotSupportedException {
         Date inTime = new Date();
         ParkingService parkingService = new ParkingService(inputReaderUtil, parkingSpotDAO, ticketDAO);
         parkingService.processIncomingVehicle();

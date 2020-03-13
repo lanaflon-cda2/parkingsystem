@@ -46,7 +46,7 @@ public class FareCalculatorServiceTest {
 
     @Test
     //@Disabled
-    public void calculateFareCar(){
+    public void calculateFareCar() throws CloneNotSupportedException {
         Date inTime = new Date();
         inTime.setTime( System.currentTimeMillis() - (  60 * 60 * 1000) );
         Date outTime = new Date();
@@ -62,7 +62,7 @@ public class FareCalculatorServiceTest {
 
     @Test
     //@Disabled
-    public void calculateFareBike(){
+    public void calculateFareBike() throws CloneNotSupportedException {
         Date inTime = new Date();
         inTime.setTime( System.currentTimeMillis() - (  60 * 60 * 1000) );
         Date outTime = new Date();
@@ -106,7 +106,7 @@ public class FareCalculatorServiceTest {
 
     @Test
     //@Disabled
-    public void calculateFareBikeWithLessThanOneHourParkingTime(){
+    public void calculateFareBikeWithLessThanOneHourParkingTime() throws CloneNotSupportedException {
         Date inTime = new Date();
         inTime.setTime( System.currentTimeMillis() - (  45 * 60 * 1000) );//45 minutes parking time should give 3/4th parking fare
         Date outTime = new Date();
@@ -121,7 +121,7 @@ public class FareCalculatorServiceTest {
 
     @Test
     //@Disabled
-    public void calculateFareCarWithLessThanOneHourParkingTime(){
+    public void calculateFareCarWithLessThanOneHourParkingTime() throws CloneNotSupportedException {
         Date inTime = new Date();
         inTime.setTime( System.currentTimeMillis() - (  45 * 60 * 1000) );//45 minutes parking time should give 3/4th parking fare
         Date outTime = new Date();
@@ -136,7 +136,7 @@ public class FareCalculatorServiceTest {
 
     @Test
     //@Disabled
-    public void calculateFareCarWithMoreThanADayParkingTime(){
+    public void calculateFareCarWithMoreThanADayParkingTime() throws CloneNotSupportedException {
         Date inTime = new Date();
         inTime.setTime( System.currentTimeMillis() - (  24 * 60 * 60 * 1000) );//24 hours parking time should give 24 * parking fare per hour
         Date outTime = new Date();
@@ -151,7 +151,7 @@ public class FareCalculatorServiceTest {
 
     @Test
     //@Disabled
-    public void calculateFareCarWithLessThan30MinParkingTime(){
+    public void calculateFareCarWithLessThan30MinParkingTime() throws CloneNotSupportedException {
         Date inTime = new Date();
         inTime.setTime( System.currentTimeMillis() - (  15 * 60 * 1000) );//45 minutes parking time should give 3/4th parking fare
         Date outTime = new Date();
@@ -165,7 +165,7 @@ public class FareCalculatorServiceTest {
     }
     @Test
     //@Disabled
-    public void calculateFareBikeWithLessThan30MinParkingTime(){
+    public void calculateFareBikeWithLessThan30MinParkingTime() throws CloneNotSupportedException {
         Date inTime = new Date();
         inTime.setTime( System.currentTimeMillis() - (  15 * 60 * 1000) );//45 minutes parking time should give 3/4th parking fare
         Date outTime = new Date();
@@ -180,7 +180,7 @@ public class FareCalculatorServiceTest {
 
     @Test
     //@Disabled
-    public void calculateFareCarWith30MinParkingTime(){
+    public void calculateFareCarWith30MinParkingTime() throws CloneNotSupportedException {
         Date inTime = new Date();
         inTime.setTime( System.currentTimeMillis() - (  30 * 60 * 1000) );//45 minutes parking time should give 3/4th parking fare
         Date outTime = new Date();
@@ -194,7 +194,7 @@ public class FareCalculatorServiceTest {
     }
     @Test
     //@Disabled
-    public void calculateFareBikeWith30MinParkingTime(){
+    public void calculateFareBikeWith30MinParkingTime() throws CloneNotSupportedException {
         Date inTime = new Date();
         inTime.setTime( System.currentTimeMillis() - (  30 * 60 * 1000) );//45 minutes parking time should give 3/4th parking fare
         Date outTime = new Date();
@@ -209,7 +209,7 @@ public class FareCalculatorServiceTest {
 
     @Test
     //@Disabled
-    public void calculateFareBikeRecurentTwoHoursParkingTime(){
+    public void calculateFareBikeRecurentTwoHoursParkingTime() throws CloneNotSupportedException {
         Date inTime = new Date();
         inTime.setTime( System.currentTimeMillis() - (  120 * 60 * 1000) );
         Date outTime = new Date();
@@ -227,7 +227,7 @@ public class FareCalculatorServiceTest {
 
     @Test
     //@Disabled
-    public void calculateFareCarRecurentTwoHoursParkingTime(){
+    public void calculateFareCarRecurentTwoHoursParkingTime() throws CloneNotSupportedException {
         Date inTime = new Date();
         inTime.setTime( System.currentTimeMillis() - (  120 * 60 * 1000) );
         Date outTime = new Date();

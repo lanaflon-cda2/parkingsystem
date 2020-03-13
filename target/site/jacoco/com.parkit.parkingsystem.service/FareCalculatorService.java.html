@@ -12,7 +12,7 @@ public class FareCalculatorService extends ReducCalaculator {
 <span class="fc" id="L12">    }</span>
 
     @SuppressWarnings({&quot;checkstyle:WhitespaceAround&quot;, &quot;checkstyle:FinalParameters&quot;, &quot;checkstyle:AvoidNestedBlocks&quot;})
-    public void calculateFare(Ticket ticket) {
+    public void calculateFare(Ticket ticket) throws CloneNotSupportedException {
 <span class="pc bpc" id="L16" title="1 of 4 branches missed.">        if ((ticket.getOutTime() == null) || (ticket.getOutTime().before(ticket.getInTime()))) {</span>
 <span class="fc" id="L17">            throw new IllegalArgumentException(&quot;Out time provided is incorrect:&quot; + ticket.getOutTime().toString());</span>
         }

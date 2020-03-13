@@ -8,6 +8,7 @@ import org.apache.logging.log4j.Logger;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class ClientDAO {
 
@@ -20,19 +21,21 @@ public class ClientDAO {
         Connection con = null;
         int test=0;
         boolean rec = false;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
         try {
             con = dataBaseConfig.getConnection();
-            PreparedStatement ps = con.prepareStatement(DBConstants.GET_CLIENT);
+            ps = con.prepareStatement(DBConstants.GET_CLIENT);
             ps.setString(1, vehicleRegNumber);
-            ResultSet rs = ps.executeQuery();
+            rs = ps.executeQuery();
             rs.next();
             test = rs.getInt(1);
-
             if(test>1){rec = true;}
-            dataBaseConfig.closePreparedStatement(ps);
-        }catch (Exception ex){
-            logger.error("Error fetching next available slot",ex);
+        }catch (Exception ex) {
+            logger.error("Error fetching next available slot", ex);
         }finally {
+            dataBaseConfig.closeResultSet(rs);
+            dataBaseConfig.closePreparedStatement(ps);
             dataBaseConfig.closeConnection(con);
         }
         return rec;
