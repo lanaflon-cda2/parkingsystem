@@ -1,8 +1,9 @@
 package com.parkit.parkingsystem.service;
 
-import com.parkit.parkingsystem.constants.Fare;
 import com.parkit.parkingsystem.dao.ClientDAO;
 import com.parkit.parkingsystem.model.Ticket;
+
+import java.lang.reflect.InvocationTargetException;
 
 public class FareCalculatorService extends ReducCalaculator {
 
@@ -11,8 +12,7 @@ public class FareCalculatorService extends ReducCalaculator {
         super(clientDAO);
     }
 
-    @SuppressWarnings({"checkstyle:WhitespaceAround", "checkstyle:FinalParameters", "checkstyle:AvoidNestedBlocks"})
-    public void calculateFare(Ticket ticket) throws CloneNotSupportedException {
+    public void calculateFare(Ticket ticket) throws CloneNotSupportedException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
         if ((ticket.getOutTime() == null) || (ticket.getOutTime().before(ticket.getInTime()))) {
             throw new IllegalArgumentException("Out time provided is incorrect:" + ticket.getOutTime().toString());
         }
@@ -33,19 +33,8 @@ public class FareCalculatorService extends ReducCalaculator {
 
         double durationTotal = reducCalc(suppressMin, vehicule);
 
-
-        switch (ticket.getParkingSpot().getParkingType()) {
-            case CAR: {
-                ticket.setPrice(durationTotal * Fare.CAR_RATE_PER_HOUR);
-                break;
-            }
-            case BIKE: {
-                ticket.setPrice(durationTotal * Fare.BIKE_RATE_PER_HOUR);
-                break;
-            }
-            default:
-                throw new IllegalArgumentException("Unkown Parking Type");
-        }
+        double price = setPriceVehicule(durationTotal, ticket.getParkingSpot().getParkingType().toString());
+        ticket.setPrice(price);
 
     }
 }

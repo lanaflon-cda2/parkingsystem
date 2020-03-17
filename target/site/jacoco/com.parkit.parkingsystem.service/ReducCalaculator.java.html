@@ -2,33 +2,56 @@
 
 import com.parkit.parkingsystem.constants.Fare;
 import com.parkit.parkingsystem.dao.ClientDAO;
+import com.parkit.parkingsystem.model.BIKE;
+import com.parkit.parkingsystem.model.CAR;
 
 
 public class ReducCalaculator {
     private final ClientDAO clientDAO;
 
-<span class="fc" id="L10">    public ReducCalaculator(ClientDAO clientDAO) {</span>
-<span class="fc" id="L11">        this.clientDAO = clientDAO;</span>
-<span class="fc" id="L12">    }</span>
+<span class="fc" id="L12">    public ReducCalaculator(ClientDAO clientDAO) {</span>
+<span class="fc" id="L13">        this.clientDAO = clientDAO;</span>
+<span class="fc" id="L14">    }</span>
 
 
     public double reducCalc(double duration, String vehicule) {
 
-<span class="fc bfc" id="L17" title="All 2 branches covered.">        if (clientDAO.getClient(vehicule)) {</span>
-<span class="fc" id="L18">            duration *= Fare.RECURENT_CLIENT_REDUC;</span>
+<span class="fc bfc" id="L19" title="All 2 branches covered.">        if (clientDAO.getClient(vehicule)) {</span>
+<span class="fc" id="L20">            duration *= Fare.RECURENT_CLIENT_REDUC;</span>
         }
-<span class="fc" id="L20">        return duration;</span>
+<span class="fc" id="L22">        return duration;</span>
     }
+
 
     public double minTimer(double durationConcat) {
 
-<span class="fc" id="L25">        durationConcat -= 0.50; // Gratuité des 30 premieres minutes</span>
-<span class="fc" id="L26">        double durationTotal = Math.round(durationConcat * (1.0 / 0.01)) / (1.0 / 0.01);</span>
-<span class="fc bfc" id="L27" title="All 2 branches covered.">        if (durationTotal &lt; 0) {</span>
-<span class="fc" id="L28">            durationTotal = 0.00;</span>
+<span class="fc" id="L28">        durationConcat -= 0.50; // Gratuité des 30 premieres minutes</span>
+<span class="fc" id="L29">        double durationTotal = Math.round(durationConcat * (1.0 / 0.01)) / (1.0 / 0.01);</span>
+<span class="fc bfc" id="L30" title="All 2 branches covered.">        if (durationTotal &lt; 0) {</span>
+<span class="fc" id="L31">            durationTotal = 0.00;</span>
         }
-<span class="fc" id="L30">        return durationTotal;</span>
+<span class="fc" id="L33">        return durationTotal;</span>
     }
+
+
+    public double setPriceVehicule(double durationTotal, String vehicule){
+
+
+<span class="pc bpc" id="L40" title="1 of 3 branches missed.">        switch (vehicule) {</span>
+            case &quot;CAR&quot;: {
+<span class="fc" id="L42">                CAR car = new CAR();</span>
+<span class="fc" id="L43">                return car.setPriceV(durationTotal);</span>
+            }
+            case &quot;BIKE&quot;: {
+<span class="fc" id="L46">                BIKE bike = new BIKE();</span>
+<span class="fc" id="L47">                return bike.setPriceV(durationTotal);</span>
+            }
+            default:
+<span class="nc" id="L50">                throw new IllegalArgumentException(&quot;Unkown Parking Type&quot;);</span>
+        }
+
+    }
+
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

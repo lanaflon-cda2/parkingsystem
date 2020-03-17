@@ -41,29 +41,30 @@ import java.util.Date;
 <span class="fc" id="L41">        return price;</span>
     }
 
+
     public void setPrice(double price) {
-<span class="fc" id="L45">        this.price = price;</span>
-<span class="fc" id="L46">    }</span>
+<span class="fc" id="L46">        this.price = price;</span>
+<span class="fc" id="L47">    }</span>
 
     public Date getInTime() throws CloneNotSupportedException {
-<span class="fc" id="L49">        Date dateInTime = inTime;</span>
-<span class="fc" id="L50">        return dateInTime;</span>
+<span class="fc" id="L50">        Date dateInTime = inTime;</span>
+<span class="fc" id="L51">        return dateInTime;</span>
     }
 
     public void setInTime(Date inTime) {
-<span class="fc" id="L54">        this.inTime = new Date (inTime.getTime());</span>
-<span class="fc" id="L55">    }</span>
+<span class="fc" id="L55">        this.inTime = new Date (inTime.getTime());</span>
+<span class="fc" id="L56">    }</span>
 
     public Date getOutTime() throws CloneNotSupportedException {
-<span class="fc" id="L58">        Date dateOutTime = outTime;</span>
-<span class="fc" id="L59">        return dateOutTime;</span>
+<span class="fc" id="L59">        Date dateOutTime = outTime;</span>
+<span class="fc" id="L60">        return dateOutTime;</span>
     }
 
     public void setOutTime(Date outTime) {
-<span class="fc bfc" id="L63" title="All 2 branches covered.">        if (outTime == null){</span>
-<span class="fc" id="L64">            this.outTime = null;</span>
+<span class="fc bfc" id="L64" title="All 2 branches covered.">        if (outTime == null){</span>
+<span class="fc" id="L65">            this.outTime = null;</span>
         } else
-<span class="fc" id="L66">            this.outTime = new Date (outTime.getTime());</span>
-<span class="fc" id="L67">    }</span>
+<span class="fc" id="L67">            this.outTime = new Date (outTime.getTime());</span>
+<span class="fc" id="L68">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

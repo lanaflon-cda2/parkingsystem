@@ -66,8 +66,8 @@ import java.sql.Timestamp;
 <span class="fc" id="L66">                ticket.setOutTime(rs.getTimestamp(5));</span>
             }
 
-<span class="nc" id="L69">        }catch (Exception ex){</span>
-<span class="nc" id="L70">            logger.error(&quot;Error fetching next available slot&quot;,ex);</span>
+<span class="fc" id="L69">        }catch (Exception ex){</span>
+<span class="fc" id="L70">            logger.error(&quot;Error fetching next available slot&quot;,ex);</span>
         }finally {
 <span class="pc" id="L72">            dataBaseConfig.closeResultSet(rs);</span>
 <span class="pc" id="L73">            dataBaseConfig.closePreparedStatement(ps);</span>

@@ -96,15 +96,6 @@
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-simple:2.0.0-alpha0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.ant:ant:1.10.6" level="project" />
     <orderEntry type="library" name="Maven: org.apache.ant:ant-launcher:1.10.6" level="project" />
-    <orderEntry type="module-library">
-      <library name="Maven: com.sun:tools:1.8.0">
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../java/JDK/jdk1.8.0_181/lib/tools.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
     <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy:indy:3.0.0-beta-2" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy-ant:indy:3.0.0-beta-2" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy:3.0.0-beta-2" level="project" />
@@ -159,5 +150,7 @@
     <orderEntry type="library" name="Maven: com.google.j2objc:j2objc-annotations:1.3" level="project" />
     <orderEntry type="library" name="Maven: net.sf.saxon:Saxon-HE:9.9.1-6" level="project" />
     <orderEntry type="library" name="Maven: org.apache.velocity:velocity:1.7" level="project" />
+    <orderEntry type="library" name="Maven: javax.xml.bind:jaxb-api:2.3.1" level="project" />
+    <orderEntry type="library" name="Maven: javax.activation:javax.activation-api:1.2.0" level="project" />
   </component>
 </module>

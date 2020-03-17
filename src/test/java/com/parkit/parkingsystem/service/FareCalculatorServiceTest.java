@@ -19,6 +19,7 @@ import static org.mockito.Mockito.when;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.Date;
 
 public class FareCalculatorServiceTest {
@@ -46,7 +47,7 @@ public class FareCalculatorServiceTest {
 
     @Test
     //@Disabled
-    public void calculateFareCar() throws CloneNotSupportedException {
+    public void calculateFareCar() throws CloneNotSupportedException, ClassNotFoundException, NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
         Date inTime = new Date();
         inTime.setTime( System.currentTimeMillis() - (  60 * 60 * 1000) );
         Date outTime = new Date();
@@ -62,7 +63,7 @@ public class FareCalculatorServiceTest {
 
     @Test
     //@Disabled
-    public void calculateFareBike() throws CloneNotSupportedException {
+    public void calculateFareBike() throws CloneNotSupportedException, ClassNotFoundException, NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
         Date inTime = new Date();
         inTime.setTime( System.currentTimeMillis() - (  60 * 60 * 1000) );
         Date outTime = new Date();
@@ -106,7 +107,7 @@ public class FareCalculatorServiceTest {
 
     @Test
     //@Disabled
-    public void calculateFareBikeWithLessThanOneHourParkingTime() throws CloneNotSupportedException {
+    public void calculateFareBikeWithLessThanOneHourParkingTime() throws CloneNotSupportedException, ClassNotFoundException, NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
         Date inTime = new Date();
         inTime.setTime( System.currentTimeMillis() - (  45 * 60 * 1000) );//45 minutes parking time should give 3/4th parking fare
         Date outTime = new Date();
@@ -121,7 +122,7 @@ public class FareCalculatorServiceTest {
 
     @Test
     //@Disabled
-    public void calculateFareCarWithLessThanOneHourParkingTime() throws CloneNotSupportedException {
+    public void calculateFareCarWithLessThanOneHourParkingTime() throws CloneNotSupportedException, ClassNotFoundException, NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
         Date inTime = new Date();
         inTime.setTime( System.currentTimeMillis() - (  45 * 60 * 1000) );//45 minutes parking time should give 3/4th parking fare
         Date outTime = new Date();
@@ -136,7 +137,7 @@ public class FareCalculatorServiceTest {
 
     @Test
     //@Disabled
-    public void calculateFareCarWithMoreThanADayParkingTime() throws CloneNotSupportedException {
+    public void calculateFareCarWithMoreThanADayParkingTime() throws CloneNotSupportedException, ClassNotFoundException, NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
         Date inTime = new Date();
         inTime.setTime( System.currentTimeMillis() - (  24 * 60 * 60 * 1000) );//24 hours parking time should give 24 * parking fare per hour
         Date outTime = new Date();
@@ -151,7 +152,7 @@ public class FareCalculatorServiceTest {
 
     @Test
     //@Disabled
-    public void calculateFareCarWithLessThan30MinParkingTime() throws CloneNotSupportedException {
+    public void calculateFareCarWithLessThan30MinParkingTime() throws CloneNotSupportedException, ClassNotFoundException, NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
         Date inTime = new Date();
         inTime.setTime( System.currentTimeMillis() - (  15 * 60 * 1000) );//45 minutes parking time should give 3/4th parking fare
         Date outTime = new Date();
@@ -165,7 +166,7 @@ public class FareCalculatorServiceTest {
     }
     @Test
     //@Disabled
-    public void calculateFareBikeWithLessThan30MinParkingTime() throws CloneNotSupportedException {
+    public void calculateFareBikeWithLessThan30MinParkingTime() throws CloneNotSupportedException, ClassNotFoundException, NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
         Date inTime = new Date();
         inTime.setTime( System.currentTimeMillis() - (  15 * 60 * 1000) );//45 minutes parking time should give 3/4th parking fare
         Date outTime = new Date();
@@ -180,7 +181,7 @@ public class FareCalculatorServiceTest {
 
     @Test
     //@Disabled
-    public void calculateFareCarWith30MinParkingTime() throws CloneNotSupportedException {
+    public void calculateFareCarWith30MinParkingTime() throws CloneNotSupportedException, ClassNotFoundException, NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
         Date inTime = new Date();
         inTime.setTime( System.currentTimeMillis() - (  30 * 60 * 1000) );//45 minutes parking time should give 3/4th parking fare
         Date outTime = new Date();
@@ -194,7 +195,7 @@ public class FareCalculatorServiceTest {
     }
     @Test
     //@Disabled
-    public void calculateFareBikeWith30MinParkingTime() throws CloneNotSupportedException {
+    public void calculateFareBikeWith30MinParkingTime() throws CloneNotSupportedException, ClassNotFoundException, NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
         Date inTime = new Date();
         inTime.setTime( System.currentTimeMillis() - (  30 * 60 * 1000) );//45 minutes parking time should give 3/4th parking fare
         Date outTime = new Date();
@@ -209,7 +210,7 @@ public class FareCalculatorServiceTest {
 
     @Test
     //@Disabled
-    public void calculateFareBikeRecurentTwoHoursParkingTime() throws CloneNotSupportedException {
+    public void calculateFareBikeRecurentTwoHoursParkingTime() throws CloneNotSupportedException, ClassNotFoundException, NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
         Date inTime = new Date();
         inTime.setTime( System.currentTimeMillis() - (  120 * 60 * 1000) );
         Date outTime = new Date();
@@ -227,7 +228,7 @@ public class FareCalculatorServiceTest {
 
     @Test
     //@Disabled
-    public void calculateFareCarRecurentTwoHoursParkingTime() throws CloneNotSupportedException {
+    public void calculateFareCarRecurentTwoHoursParkingTime() throws CloneNotSupportedException, ClassNotFoundException, NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
         Date inTime = new Date();
         inTime.setTime( System.currentTimeMillis() - (  120 * 60 * 1000) );
         Date outTime = new Date();

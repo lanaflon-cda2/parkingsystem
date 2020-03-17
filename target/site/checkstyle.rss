@@ -25,8 +25,8 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2020</copyright>
     <item>
-      <title>File: 15,
-             Errors: 417,
+      <title>File: 19,
+             Errors: 432,
              Warnings: 0,
              Infos: 0
       </title>
@@ -60,6 +60,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.model.SetPriceAbs.java">com/parkit/parkingsystem/model/SetPriceAbs.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.util.InputReaderUtil.java">com/parkit/parkingsystem/util/InputReaderUtil.java</a>
                 </td>
                 <td>
@@ -83,7 +97,21 @@ under the License.
                   0
                 </td>
                 <td>
-                  29
+                  30
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.model.BIKE.java">com/parkit/parkingsystem/model/BIKE.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
                 </td>
               </tr>
                           <tr>
@@ -116,6 +144,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.model.CAR.java">com/parkit/parkingsystem/model/CAR.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.constants.DBConstants.java">com/parkit/parkingsystem/constants/DBConstants.java</a>
                 </td>
                 <td>
@@ -144,20 +186,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.App.java">com/parkit/parkingsystem/App.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  7
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.config.DataBaseConfig.java">com/parkit/parkingsystem/config/DataBaseConfig.java</a>
                 </td>
                 <td>
@@ -168,6 +196,20 @@ under the License.
                 </td>
                 <td>
                   38
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.App.java">com/parkit/parkingsystem/App.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
                 </td>
               </tr>
                           <tr>
@@ -195,7 +237,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  15
+                  22
                 </td>
               </tr>
                           <tr>
@@ -209,7 +251,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  88
+                  89
                 </td>
               </tr>
                           <tr>
@@ -237,7 +279,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  23
+                  22
                 </td>
               </tr>
                           <tr>
@@ -251,7 +293,21 @@ under the License.
                   0
                 </td>
                 <td>
-                  20
+                  17
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.Interfaces.ISetPriceV.java">com/parkit/parkingsystem/Interfaces/ISetPriceV.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
                 </td>
               </tr>
                       </tbody>
