@@ -3,6 +3,7 @@
 /home/slingshot/IdeaProjects/Projet4_OC/park/src/main/java/com/parkit/parkingsystem/constants/ParkingType.java
 /home/slingshot/IdeaProjects/Projet4_OC/park/src/main/java/com/parkit/parkingsystem/service/ParkingService.java
 /home/slingshot/IdeaProjects/Projet4_OC/park/src/main/java/com/parkit/parkingsystem/config/DataBaseConfig.java
+/home/slingshot/IdeaProjects/Projet4_OC/park/src/main/java/com/parkit/parkingsystem/Interfaces/ISetPriceV.java
 /home/slingshot/IdeaProjects/Projet4_OC/park/src/main/java/com/parkit/parkingsystem/constants/Fare.java
 /home/slingshot/IdeaProjects/Projet4_OC/park/src/main/java/com/parkit/parkingsystem/model/ParkingSpot.java
 /home/slingshot/IdeaProjects/Projet4_OC/park/src/main/java/com/parkit/parkingsystem/model/Ticket.java
@@ -13,3 +14,5 @@
 /home/slingshot/IdeaProjects/Projet4_OC/park/src/main/java/com/parkit/parkingsystem/service/InteractiveShell.java
 /home/slingshot/IdeaProjects/Projet4_OC/park/src/main/java/com/parkit/parkingsystem/App.java
 /home/slingshot/IdeaProjects/Projet4_OC/park/src/main/java/com/parkit/parkingsystem/dao/ClientDAO.java
+/home/slingshot/IdeaProjects/Projet4_OC/park/src/main/java/com/parkit/parkingsystem/model/Bike.java
+/home/slingshot/IdeaProjects/Projet4_OC/park/src/main/java/com/parkit/parkingsystem/model/Car.java

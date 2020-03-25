@@ -60,7 +60,7 @@ public class ParkingService {
         return inputReaderUtil.readVehicleRegistrationNumber();
     }
 
-    public ParkingSpot getNextParkingNumberIfAvailable(){
+    public ParkingSpot getNextParkingNumberIfAvailable() throws Exception{
         int parkingNumber=0;
         ParkingSpot parkingSpot = null;
         try{

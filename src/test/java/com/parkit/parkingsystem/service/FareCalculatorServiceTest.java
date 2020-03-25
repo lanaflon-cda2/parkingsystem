@@ -5,20 +5,12 @@ import com.parkit.parkingsystem.constants.ParkingType;
 import com.parkit.parkingsystem.dao.ClientDAO;
 import com.parkit.parkingsystem.model.ParkingSpot;
 import com.parkit.parkingsystem.model.Ticket;
-import com.parkit.parkingsystem.service.FareCalculatorService;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.*;
-import org.mockito.junit.jupiter.MockitoExtension;
-
-import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
-
 import static org.junit.jupiter.api.Assertions.*;
-
 import java.lang.reflect.InvocationTargetException;
 import java.util.Date;
 
@@ -26,28 +18,28 @@ public class FareCalculatorServiceTest {
 
     private static FareCalculatorService fareCalculatorService;
     private Ticket ticket;
- //   private Object Null;
+//    private Object Null;
 
     @Mock
-    private static ClientDAO clientDAO2;
+    private static ClientDAO clientDAO;
 
 
-    @BeforeAll
-    private static void setUp() {
-
-    }
+//    @BeforeAll
+//    private static void setUp() {
+//
+//    }
 
     @BeforeEach
     private void setUpPerTest() {
         MockitoAnnotations.initMocks(this);
-        fareCalculatorService = new FareCalculatorService(clientDAO2);
+        fareCalculatorService = new FareCalculatorService(clientDAO);
         ticket = new Ticket();
     }
 
 
     @Test
     //@Disabled
-    public void calculateFareCar() throws CloneNotSupportedException, ClassNotFoundException, NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
+    public void calculateFareCar() throws ClassNotFoundException, NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException, CloneNotSupportedException {
         Date inTime = new Date();
         inTime.setTime( System.currentTimeMillis() - (  60 * 60 * 1000) );
         Date outTime = new Date();
@@ -164,6 +156,7 @@ public class FareCalculatorServiceTest {
         fareCalculatorService.calculateFare(ticket);
         assertEquals( (0 * Fare.CAR_RATE_PER_HOUR) , ticket.getPrice());
     }
+
     @Test
     //@Disabled
     public void calculateFareBikeWithLessThan30MinParkingTime() throws CloneNotSupportedException, ClassNotFoundException, NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
@@ -221,7 +214,7 @@ public class FareCalculatorServiceTest {
         ticket.setInTime(inTime);
         ticket.setOutTime(outTime);
         ticket.setParkingSpot(parkingSpot);
-        when(clientDAO2.getClient(vehicule)).thenReturn(true);
+        when(clientDAO.getClient(vehicule)).thenReturn(true);
         fareCalculatorService.calculateFare(ticket);
         assertEquals((1.5 * Fare.BIKE_RATE_PER_HOUR)*95/100, ticket.getPrice(), 0.001 );
     }
@@ -239,10 +232,8 @@ public class FareCalculatorServiceTest {
         ticket.setInTime(inTime);
         ticket.setOutTime(outTime);
         ticket.setParkingSpot(parkingSpot);
-        when(clientDAO2.getClient(vehicule)).thenReturn(true);
+        when(clientDAO.getClient(vehicule)).thenReturn(true);
         fareCalculatorService.calculateFare(ticket);
         assertEquals((1.5 * Fare.CAR_RATE_PER_HOUR)*95/100, ticket.getPrice(), 0.001 );
     }
-
-
 }

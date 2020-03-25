@@ -9,7 +9,6 @@ import it.com.parkit.parkingsystem.service.DataBasePrepareService;
 import com.parkit.parkingsystem.model.Ticket;
 import com.parkit.parkingsystem.service.ParkingService;
 import com.parkit.parkingsystem.util.InputReaderUtil;
-import org.apache.logging.log4j.core.config.Order;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
@@ -71,7 +70,6 @@ public class ParkingDataBaseBikeITTest {
         assertNotNull(ticket.getOutTime());
         assertNotNull(ticket.getParkingSpot());
         assertEquals("bike", ticket.getVehicleRegNumber());
-        //TODO: check that the fare generated and out time are populated correctly in the database : OK
     }
 
     @Test
@@ -86,7 +84,6 @@ public class ParkingDataBaseBikeITTest {
         assertNotNull(ticket.getInTime());
         assertNotNull(ticket.getParkingSpot());
         assertEquals("bike", ticket.getVehicleRegNumber());
-        //TODO: check that a ticket is actualy saved in DB and Parking table is updated with availability :OK
     }
 
 }

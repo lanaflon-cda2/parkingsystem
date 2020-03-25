@@ -2,54 +2,61 @@
 
 import com.parkit.parkingsystem.constants.Fare;
 import com.parkit.parkingsystem.dao.ClientDAO;
-import com.parkit.parkingsystem.model.BIKE;
-import com.parkit.parkingsystem.model.CAR;
+import com.parkit.parkingsystem.model.Bike;
+import com.parkit.parkingsystem.model.Car;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
 
 public class ReducCalaculator {
     private final ClientDAO clientDAO;
 
-<span class="fc" id="L12">    public ReducCalaculator(ClientDAO clientDAO) {</span>
-<span class="fc" id="L13">        this.clientDAO = clientDAO;</span>
-<span class="fc" id="L14">    }</span>
+<span class="fc" id="L15">    public ReducCalaculator(ClientDAO clientDAO) {</span>
+<span class="fc" id="L16">        this.clientDAO = clientDAO;</span>
+<span class="fc" id="L17">    }</span>
 
 
     public double reducCalc(double duration, String vehicule) {
 
-<span class="fc bfc" id="L19" title="All 2 branches covered.">        if (clientDAO.getClient(vehicule)) {</span>
-<span class="fc" id="L20">            duration *= Fare.RECURENT_CLIENT_REDUC;</span>
+<span class="fc bfc" id="L22" title="All 2 branches covered.">        if (clientDAO.getClient(vehicule)) {</span>
+<span class="fc" id="L23">            duration *= Fare.RECURENT_CLIENT_REDUC;</span>
         }
-<span class="fc" id="L22">        return duration;</span>
+<span class="fc" id="L25">        return duration;</span>
     }
 
 
     public double minTimer(double durationConcat) {
 
-<span class="fc" id="L28">        durationConcat -= 0.50; // Gratuité des 30 premieres minutes</span>
-<span class="fc" id="L29">        double durationTotal = Math.round(durationConcat * (1.0 / 0.01)) / (1.0 / 0.01);</span>
-<span class="fc bfc" id="L30" title="All 2 branches covered.">        if (durationTotal &lt; 0) {</span>
-<span class="fc" id="L31">            durationTotal = 0.00;</span>
+<span class="fc" id="L31">        durationConcat -= 0.50; // Gratuité des 30 premieres minutes</span>
+<span class="fc" id="L32">        double durationTotal = Math.round(durationConcat * (1.0 / 0.01)) / (1.0 / 0.01);</span>
+<span class="fc bfc" id="L33" title="All 2 branches covered.">        if (durationTotal &lt; 0) {</span>
+<span class="fc" id="L34">            durationTotal = 0.00;</span>
         }
-<span class="fc" id="L33">        return durationTotal;</span>
+<span class="fc" id="L36">        return durationTotal;</span>
     }
 
 
-    public double setPriceVehicule(double durationTotal, String vehicule){
+    public double setPriceVehicule(double durationTotal, String vehicule) throws ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
 
+/*        String methodName = &quot;setPriceV&quot;;
+        String chaine = vehicule.toLowerCase();
+        char[] char_table = chaine.toCharArray();
+        char_table[0]=Character.toUpperCase(char_table[0]);
+        chaine = new String(char_table);*/
 
-<span class="pc bpc" id="L40" title="1 of 3 branches missed.">        switch (vehicule) {</span>
+<span class="pc bpc" id="L48" title="1 of 3 branches missed.">        switch (vehicule) {</span>
             case &quot;CAR&quot;: {
-<span class="fc" id="L42">                CAR car = new CAR();</span>
-<span class="fc" id="L43">                return car.setPriceV(durationTotal);</span>
+<span class="fc" id="L50">                Car car = new Car();</span>
+<span class="fc" id="L51">                return car.setPriceV(durationTotal);</span>
             }
             case &quot;BIKE&quot;: {
-<span class="fc" id="L46">                BIKE bike = new BIKE();</span>
-<span class="fc" id="L47">                return bike.setPriceV(durationTotal);</span>
+<span class="fc" id="L54">                Bike bike = new Bike();</span>
+<span class="fc" id="L55">                return bike.setPriceV(durationTotal);</span>
             }
             default:
-<span class="nc" id="L50">                throw new IllegalArgumentException(&quot;Unkown Parking Type&quot;);</span>
+<span class="nc" id="L58">                throw new IllegalArgumentException(&quot;Unkown Parking Type&quot;);</span>
         }
-
     }
 
 

@@ -11,11 +11,15 @@
             </Policies>
             <DefaultRolloverStrategy max="20" />
         </RollingFile>
+        <TestAppender name="TestAppender" >
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+        </TestAppender>
     </Appenders>
     <Loggers>
         <Root level="info">
             <AppenderRef ref="Console" />
             <AppenderRef ref="RollingFile" />
+            <AppenderRef ref="TestAppender" level="All" />
         </Root>
     </Loggers>
 </Configuration>
