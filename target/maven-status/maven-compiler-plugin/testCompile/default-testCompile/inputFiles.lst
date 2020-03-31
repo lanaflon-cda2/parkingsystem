@@ -1,8 +1,7 @@
+/home/slingshot/IdeaProjects/Projet4_OC/park/src/test/java/com/parkit/parkingsystem/service/GestionExceptionTest.java
 /home/slingshot/IdeaProjects/Projet4_OC/park/src/test/java/it/com/parkit/parkingsystem/ParkingDataBaseITTest.java
 /home/slingshot/IdeaProjects/Projet4_OC/park/src/test/java/com/parkit/parkingsystem/service/ParkingServiceTest.java
-/home/slingshot/IdeaProjects/Projet4_OC/park/src/test/java/it/com/parkit/parkingsystem/GestionExceptionITTest.java
 /home/slingshot/IdeaProjects/Projet4_OC/park/src/test/java/it/com/parkit/parkingsystem/service/DataBasePrepareService.java
-/home/slingshot/IdeaProjects/Projet4_OC/park/src/test/java/it/com/parkit/parkingsystem/GestionException2.java
 /home/slingshot/IdeaProjects/Projet4_OC/park/src/test/java/com/parkit/parkingsystem/service/FareCalculatorServiceTest.java
 /home/slingshot/IdeaProjects/Projet4_OC/park/src/test/java/it/com/parkit/parkingsystem/ParkingDataBaseBikeITTest.java
 /home/slingshot/IdeaProjects/Projet4_OC/park/src/test/java/it/com/parkit/parkingsystem/config/DataBaseTestConfig.java

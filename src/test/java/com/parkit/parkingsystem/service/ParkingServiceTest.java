@@ -13,9 +13,11 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import java.util.Date;
-import static org.mockito.Mockito.*;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyString;
+
 
 
 @ExtendWith(MockitoExtension.class)
@@ -34,7 +36,6 @@ public class ParkingServiceTest {
 
     @BeforeEach
     private void setUpPerTest() {
-
         try {
             when(inputReaderUtil.readVehicleRegistrationNumber()).thenReturn("ABCDEF");
             ParkingSpot parkingSpot = new ParkingSpot(1, ParkingType.CAR, false);
