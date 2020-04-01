@@ -26,9 +26,9 @@ under the License.
     <copyright>&#169;2020</copyright>
     <item>
       <title>File: 18,
-             Errors: 430,
+             Errors: 0,
              Warnings: 0,
-             Infos: 0
+             Infos: 725
       </title>
             <link>${project.url}/checkstyle.html</link>
       <description>
@@ -49,13 +49,13 @@ under the License.
                   <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.model.Ticket.java">com/parkit/parkingsystem/model/Ticket.java</a>
                 </td>
                 <td>
-                  0
+                  54
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  48
+                  0
                 </td>
               </tr>
                           <tr>
@@ -63,13 +63,13 @@ under the License.
                   <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.util.InputReaderUtil.java">com/parkit/parkingsystem/util/InputReaderUtil.java</a>
                 </td>
                 <td>
-                  0
+                  43
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  24
+                  0
                 </td>
               </tr>
                           <tr>
@@ -77,13 +77,13 @@ under the License.
                   <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.dao.ParkingSpotDAO.java">com/parkit/parkingsystem/dao/ParkingSpotDAO.java</a>
                 </td>
                 <td>
-                  0
+                  66
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  30
+                  0
                 </td>
               </tr>
                           <tr>
@@ -91,13 +91,13 @@ under the License.
                   <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.model.Car.java">com/parkit/parkingsystem/model/Car.java</a>
                 </td>
                 <td>
-                  0
+                  4
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  2
+                  0
                 </td>
               </tr>
                           <tr>
@@ -105,13 +105,13 @@ under the License.
                   <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.model.ParkingSpot.java">com/parkit/parkingsystem/model/ParkingSpot.java</a>
                 </td>
                 <td>
-                  0
+                  38
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  34
+                  0
                 </td>
               </tr>
                           <tr>
@@ -119,13 +119,13 @@ under the License.
                   <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.dao.TicketDAO.java">com/parkit/parkingsystem/dao/TicketDAO.java</a>
                 </td>
                 <td>
-                  0
+                  104
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  53
+                  0
                 </td>
               </tr>
                           <tr>
@@ -133,13 +133,13 @@ under the License.
                   <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.constants.DBConstants.java">com/parkit/parkingsystem/constants/DBConstants.java</a>
                 </td>
                 <td>
-                  0
+                  12
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  14
+                  0
                 </td>
               </tr>
                           <tr>
@@ -147,13 +147,13 @@ under the License.
                   <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.model.Bike.java">com/parkit/parkingsystem/model/Bike.java</a>
                 </td>
                 <td>
-                  0
+                  4
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  2
+                  0
                 </td>
               </tr>
                           <tr>
@@ -167,7 +167,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  2
+                  0
                 </td>
               </tr>
                           <tr>
@@ -175,13 +175,13 @@ under the License.
                   <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.config.DataBaseConfig.java">com/parkit/parkingsystem/config/DataBaseConfig.java</a>
                 </td>
                 <td>
-                  0
+                  67
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  38
+                  0
                 </td>
               </tr>
                           <tr>
@@ -189,13 +189,13 @@ under the License.
                   <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.App.java">com/parkit/parkingsystem/App.java</a>
                 </td>
                 <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
                   7
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
                 </td>
               </tr>
                           <tr>
@@ -203,13 +203,13 @@ under the License.
                   <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.constants.Fare.java">com/parkit/parkingsystem/constants/Fare.java</a>
                 </td>
                 <td>
-                  0
+                  3
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  4
+                  0
                 </td>
               </tr>
                           <tr>
@@ -217,13 +217,13 @@ under the License.
                   <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.service.ReducCalaculator.java">com/parkit/parkingsystem/service/ReducCalaculator.java</a>
                 </td>
                 <td>
-                  0
+                  40
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  23
+                  0
                 </td>
               </tr>
                           <tr>
@@ -231,13 +231,13 @@ under the License.
                   <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.service.ParkingService.java">com/parkit/parkingsystem/service/ParkingService.java</a>
                 </td>
                 <td>
-                  0
+                  161
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  89
+                  0
                 </td>
               </tr>
                           <tr>
@@ -245,13 +245,13 @@ under the License.
                   <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.service.InteractiveShell.java">com/parkit/parkingsystem/service/InteractiveShell.java</a>
                 </td>
                 <td>
-                  0
+                  47
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  18
+                  0
                 </td>
               </tr>
                           <tr>
@@ -259,13 +259,13 @@ under the License.
                   <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.dao.ClientDAO.java">com/parkit/parkingsystem/dao/ClientDAO.java</a>
                 </td>
                 <td>
-                  0
+                  45
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  22
+                  0
                 </td>
               </tr>
                           <tr>
@@ -273,13 +273,13 @@ under the License.
                   <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.service.FareCalculatorService.java">com/parkit/parkingsystem/service/FareCalculatorService.java</a>
                 </td>
                 <td>
-                  0
+                  28
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  18
+                  0
                 </td>
               </tr>
                           <tr>
@@ -287,13 +287,13 @@ under the License.
                   <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.Interfaces.ISetPriceV.java">com/parkit/parkingsystem/Interfaces/ISetPriceV.java</a>
                 </td>
                 <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
                   2
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
                 </td>
               </tr>
                       </tbody>

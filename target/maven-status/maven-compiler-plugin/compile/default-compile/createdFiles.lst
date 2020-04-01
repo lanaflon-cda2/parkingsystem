@@ -5,7 +5,6 @@ com/parkit/parkingsystem/config/DataBaseConfig.class
 com/parkit/parkingsystem/service/InteractiveShell.class
 com/parkit/parkingsystem/service/FareCalculatorService.class
 com/parkit/parkingsystem/dao/ClientDAO.class
-com/parkit/parkingsystem/service/ReducCalaculator.class
 com/parkit/parkingsystem/Interfaces/ISetPriceV.class
 com/parkit/parkingsystem/service/ParkingService.class
 com/parkit/parkingsystem/constants/ParkingType.class
