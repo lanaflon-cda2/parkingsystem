@@ -5,7 +5,6 @@ import com.parkit.parkingsystem.constants.ParkingType;
 import com.parkit.parkingsystem.dao.ClientDAO;
 import com.parkit.parkingsystem.model.ParkingSpot;
 import com.parkit.parkingsystem.model.Ticket;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -19,16 +18,10 @@ public class FareCalculatorServiceTest {
 
     private static FareCalculatorService fareCalculatorService;
     private Ticket ticket;
-//    private Object Null;
 
     @Mock
     private static ClientDAO clientDAO;
 
-
-//    @BeforeAll
-//    private static void setUp() {
-//
-//    }
 
     @BeforeEach
     private void setUpPerTest() {
@@ -36,7 +29,6 @@ public class FareCalculatorServiceTest {
         fareCalculatorService = new FareCalculatorService(clientDAO);
         ticket = new Ticket();
     }
-
 
     @Test
     //@Disabled
@@ -155,7 +147,7 @@ public class FareCalculatorServiceTest {
         ticket.setOutTime(outTime);
         ticket.setParkingSpot(parkingSpot);
         fareCalculatorService.calculateFare(ticket);
-        assertEquals( (0 * Fare.CAR_RATE_PER_HOUR) , ticket.getPrice());
+        assertEquals( 0, ticket.getPrice());
     }
 
     @Test
@@ -211,13 +203,15 @@ public class FareCalculatorServiceTest {
         ParkingSpot parkingSpot = new ParkingSpot(1, ParkingType.BIKE,false);
         ticket.setVehicleRegNumber("ABCDEF");
         String vehicule = ticket.getVehicleRegNumber();
-
         ticket.setInTime(inTime);
         ticket.setOutTime(outTime);
         ticket.setParkingSpot(parkingSpot);
         when(clientDAO.getClient(vehicule)).thenReturn(true);
+
         fareCalculatorService.calculateFare(ticket);
-        assertEquals((1.5 * Fare.BIKE_RATE_PER_HOUR)*95/100, ticket.getPrice(), 0.001 );
+
+        assertEquals(1.42, ticket.getPrice(), 0.001);
+/*        assertEquals((1.5 * Fare.BIKE_RATE_PER_HOUR)*95/100, ticket.getPrice(), 0.001 );*/
     }
 
     @Test
@@ -235,6 +229,9 @@ public class FareCalculatorServiceTest {
         ticket.setParkingSpot(parkingSpot);
         when(clientDAO.getClient(vehicule)).thenReturn(true);
         fareCalculatorService.calculateFare(ticket);
-        assertEquals((1.5 * Fare.CAR_RATE_PER_HOUR)*95/100, ticket.getPrice(), 0.001 );
+
+        assertEquals(2.13, ticket.getPrice(), 0.001 );
+/*        assertEquals((1.5 * Fare.CAR_RATE_PER_HOUR)*95/100, ticket.getPrice(), 0.001 );*/
+
     }
 }

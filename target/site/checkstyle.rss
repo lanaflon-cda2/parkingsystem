@@ -25,10 +25,10 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2020</copyright>
     <item>
-      <title>File: 18,
+      <title>File: 17,
              Errors: 0,
              Warnings: 0,
-             Infos: 725
+             Infos: 707
       </title>
             <link>${project.url}/checkstyle.html</link>
       <description>
@@ -158,20 +158,6 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.constants.ParkingType.java">com/parkit/parkingsystem/constants/ParkingType.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.config.DataBaseConfig.java">com/parkit/parkingsystem/config/DataBaseConfig.java</a>
                 </td>
                 <td>
@@ -214,10 +200,10 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.service.ReducCalaculator.java">com/parkit/parkingsystem/service/ReducCalaculator.java</a>
+                  <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.service.PriceService.java">com/parkit/parkingsystem/service/PriceService.java</a>
                 </td>
                 <td>
-                  40
+                  15
                 </td>
                 <td>
                   0
@@ -259,7 +245,7 @@ under the License.
                   <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.dao.ClientDAO.java">com/parkit/parkingsystem/dao/ClientDAO.java</a>
                 </td>
                 <td>
-                  45
+                  44
                 </td>
                 <td>
                   0
@@ -273,7 +259,7 @@ under the License.
                   <a href="${project.url}/checkstyle.html#com.parkit.parkingsystem.service.FareCalculatorService.java">com/parkit/parkingsystem/service/FareCalculatorService.java</a>
                 </td>
                 <td>
-                  28
+                  36
                 </td>
                 <td>
                   0

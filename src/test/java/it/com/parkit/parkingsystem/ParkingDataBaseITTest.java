@@ -60,11 +60,12 @@ public class ParkingDataBaseITTest {
   //  @Disabled
     public void testParkingACarAndExit() throws InterruptedException, CloneNotSupportedException {
         ParkingService parkingService = new ParkingService(inputReaderUtil, parkingSpotDAO, ticketDAO);
+
         parkingService.processIncomingVehicle();
         Thread.sleep(2000);
         parkingService.processExitingVehicle();
-
         ticket = ticketDAO.getTicket("ABCDEF");
+
         assertEquals(0, ticket.getPrice());
         assertNotNull(ticket.getInTime());
         assertNotNull(ticket.getOutTime());
@@ -78,9 +79,10 @@ public class ParkingDataBaseITTest {
     public void testParkingACar() throws InterruptedException, CloneNotSupportedException {
         Date inTime = new Date();
         ParkingService parkingService = new ParkingService(inputReaderUtil, parkingSpotDAO, ticketDAO);
-        parkingService.processIncomingVehicle();
 
+        parkingService.processIncomingVehicle();
         ticket = ticketDAO.getTicket("ABCDEF");
+
         assertEquals(0, ticket.getPrice());
         assertNotNull(ticket.getInTime());
         assertNotNull(ticket.getParkingSpot());

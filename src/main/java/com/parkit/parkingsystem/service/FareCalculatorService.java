@@ -1,19 +1,18 @@
 package com.parkit.parkingsystem.service;
 
+import com.parkit.parkingsystem.constants.Fare;
 import com.parkit.parkingsystem.dao.ClientDAO;
 import com.parkit.parkingsystem.model.Ticket;
 
 import java.lang.reflect.InvocationTargetException;
 
-public class FareCalculatorService extends ReducService {
+public class FareCalculatorService extends PriceService {
+    private final ClientDAO clientDAO;
 
+    public FareCalculatorService(ClientDAO clientDAO) { this.clientDAO = clientDAO; }
 
-    public FareCalculatorService(ClientDAO clientDAO) {
-        super(clientDAO);
-    }
 
     public void calculateFare(Ticket ticket) throws CloneNotSupportedException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
-/*        ClientDAO clientDAO = new ClientDAO();*/
 
         if ((ticket.getOutTime() == null) || (ticket.getOutTime().before(ticket.getInTime()))) {
             throw new IllegalArgumentException("Out time provided is incorrect:" + ticket.getOutTime().toString());
@@ -31,15 +30,18 @@ public class FareCalculatorService extends ReducService {
         double rest2 = (double) rest / 60;
         double durationConcat = durationInDay + rest2;
 
-        // Gratuite des 30ere minutes
+        // Gratuite des 30eres minutes
         durationConcat -= 0.50;
-        double durationTotal = Math.round(durationConcat * (1.0 / 0.01)) / (1.0 / 0.01);
-        if (durationTotal < 0) {
-            durationTotal = 0.00;
+        if (durationConcat < 0) {
+            durationConcat = 0.00;
         }
 
         // reduc 5% client recurrent
-        durationTotal = reducCalc(durationTotal, vehicule);
+        if (clientDAO.getClient(vehicule)) {
+            durationConcat *= Fare.RECURENT_CLIENT_REDUC;
+        }
+
+        double durationTotal = Math.round(durationConcat * (1.0 / 0.01)) / (1.0 / 0.01);
 
         double price = setPriceVehicule(durationTotal, ticket.getParkingSpot().getParkingType().toString());
         ticket.setPrice(price);

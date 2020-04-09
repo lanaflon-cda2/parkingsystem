@@ -6,22 +6,7 @@ import com.parkit.parkingsystem.model.Bike;
 import com.parkit.parkingsystem.model.Car;
 
 
-public class ReducService {
-    private final ClientDAO clientDAO;
-
-    public ReducService(ClientDAO clientDAO) {
-        this.clientDAO = clientDAO;
-    }
-
-
-    public double reducCalc(double duration, String vehicule) {
-
-        if (clientDAO.getClient(vehicule)) {
-            duration *= Fare.RECURENT_CLIENT_REDUC;
-        }
-        return duration;
-    }
-
+public class PriceService {
 
     public double setPriceVehicule(double durationTotal, String vehicule) {
 
@@ -38,6 +23,5 @@ public class ReducService {
                 throw new IllegalArgumentException("Unkown Parking Type");
         }
     }
-
 
 }

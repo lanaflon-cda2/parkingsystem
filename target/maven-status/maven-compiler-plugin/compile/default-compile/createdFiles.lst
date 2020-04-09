@@ -13,5 +13,6 @@ com/parkit/parkingsystem/model/Bike.class
 com/parkit/parkingsystem/constants/DBConstants.class
 com/parkit/parkingsystem/dao/TicketDAO.class
 com/parkit/parkingsystem/constants/Fare.class
+com/parkit/parkingsystem/service/PriceService.class
 com/parkit/parkingsystem/model/Car.class
 com/parkit/parkingsystem/App.class
