@@ -3,5 +3,4 @@
 /home/slingshot/IdeaProjects/Projet4_OC/park/src/test/java/com/parkit/parkingsystem/service/ParkingServiceTest.java
 /home/slingshot/IdeaProjects/Projet4_OC/park/src/test/java/it/com/parkit/parkingsystem/service/DataBasePrepareService.java
 /home/slingshot/IdeaProjects/Projet4_OC/park/src/test/java/com/parkit/parkingsystem/service/FareCalculatorServiceTest.java
-/home/slingshot/IdeaProjects/Projet4_OC/park/src/test/java/it/com/parkit/parkingsystem/ParkingDataBaseBikeITTest.java
 /home/slingshot/IdeaProjects/Projet4_OC/park/src/test/java/it/com/parkit/parkingsystem/config/DataBaseTestConfig.java

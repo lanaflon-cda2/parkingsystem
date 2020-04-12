@@ -1,11 +1,11 @@
-19:52:59.248 [main] ERROR InputReaderUtil - Error while reading user input from Shell
+18:35:44.577 [main] ERROR InputReaderUtil - Error while reading user input from Shell
 java.util.NoSuchElementException: No line found
 	at java.util.Scanner.nextLine(Scanner.java:1540) ~[?:1.8.0_231]
 	at com.parkit.parkingsystem.util.InputReaderUtil.readVehicleRegistrationNumber(InputReaderUtil.java:28) ~[classes/:?]
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:55) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:37) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
 	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:2952) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at com.parkit.parkingsystem.service.GestionExceptionTest.exceptionTest(GestionExceptionTest.java:24) ~[test-classes/:?]
+	at com.parkit.parkingsystem.service.GestionExceptionTest.exceptionTest(GestionExceptionTest.java:19) ~[test-classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_231]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_231]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_231]
@@ -69,114 +69,66 @@ java.util.NoSuchElementException: No line found
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340) [surefire-booter-2.21.0.jar:2.21.0]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125) [surefire-booter-2.21.0.jar:2.21.0]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413) [surefire-booter-2.21.0.jar:2.21.0]
-19:52:59.634 [main] INFO  DataBaseConfig - Create DB connection
-19:52:59.951 [main] INFO  DataBaseConfig - Closing Result Set
-19:52:59.952 [main] INFO  DataBaseConfig - Closing Prepared Statement
-19:52:59.952 [main] INFO  DataBaseConfig - Closing DB connection
-19:52:59.996 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:00.035 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:00.037 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:00.065 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:00.066 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:00.082 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:53:00.082 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:00.082 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:00.083 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:00.098 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:00.098 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:00.098 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:00.115 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:00.115 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:02.116 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:02.129 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:53:02.130 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:02.130 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:02.130 [main] INFO  DataBaseConfig - Create DB connection
-19:53:02.140 [main] INFO  DataBaseConfig - Closing Result Set
-19:53:02.140 [main] INFO  DataBaseConfig - Closing Prepared Statement
-19:53:02.140 [main] INFO  DataBaseConfig - Closing DB connection
-19:53:02.140 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:02.153 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:02.153 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:02.154 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:02.169 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:02.169 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:02.170 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:02.178 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:53:02.178 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:02.178 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:02.181 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:02.207 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:02.207 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:02.216 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:53:02.216 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:02.216 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:02.216 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:02.228 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:02.228 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:02.228 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:02.240 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:02.240 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:02.240 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:02.252 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:53:02.252 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:02.252 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:02.255 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:02.279 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:02.281 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:02.311 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:02.311 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:02.319 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:53:02.319 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:02.319 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:02.319 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:02.330 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:02.331 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:02.331 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:02.341 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:02.341 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:04.342 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:04.353 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:53:04.353 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:04.353 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:04.353 [main] INFO  DataBaseConfig - Create DB connection
-19:53:04.359 [main] INFO  DataBaseConfig - Closing Result Set
-19:53:04.360 [main] INFO  DataBaseConfig - Closing Prepared Statement
-19:53:04.360 [main] INFO  DataBaseConfig - Closing DB connection
-19:53:04.360 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:04.372 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:04.373 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:04.373 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:04.385 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:04.386 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:04.386 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:04.396 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:53:04.396 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:04.396 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:04.397 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:04.421 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:04.421 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:04.427 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:53:04.427 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:04.427 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:04.428 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:04.439 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:04.439 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:04.439 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:04.451 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:04.451 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:04.452 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:04.458 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:53:04.458 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:04.459 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:20.323 [main] ERROR InputReaderUtil - Error while reading user input from Shell
+18:35:44.944 [main] INFO  DataBaseConfig - Create DB connection
+18:35:45.249 [main] INFO  DataBaseConfig - Closing Result Set
+18:35:45.249 [main] INFO  DataBaseConfig - Closing Prepared Statement
+18:35:45.249 [main] INFO  DataBaseConfig - Closing DB connection
+18:35:45.294 [main] INFO  DataBaseTestConfig - Create DB connection
+18:35:45.331 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:35:45.333 [main] INFO  DataBaseTestConfig - Create DB connection
+18:35:45.363 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:35:45.364 [main] INFO  DataBaseTestConfig - Create DB connection
+18:35:45.375 [main] INFO  DataBaseTestConfig - Closing Result Set
+18:35:45.375 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:35:45.376 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:35:45.376 [main] INFO  DataBaseTestConfig - Create DB connection
+18:35:45.387 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:35:45.387 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:35:45.387 [main] INFO  DataBaseTestConfig - Create DB connection
+18:35:45.405 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:35:45.405 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:35:47.406 [main] INFO  DataBaseTestConfig - Create DB connection
+18:35:47.420 [main] INFO  DataBaseTestConfig - Closing Result Set
+18:35:47.420 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:35:47.420 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:35:47.420 [main] INFO  DataBaseConfig - Create DB connection
+18:35:47.435 [main] INFO  DataBaseConfig - Closing Result Set
+18:35:47.435 [main] INFO  DataBaseConfig - Closing Prepared Statement
+18:35:47.436 [main] INFO  DataBaseConfig - Closing DB connection
+18:35:47.436 [main] INFO  DataBaseTestConfig - Create DB connection
+18:35:47.449 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:35:47.449 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:35:47.449 [main] INFO  DataBaseTestConfig - Create DB connection
+18:35:47.463 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:35:47.463 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:35:47.463 [main] INFO  DataBaseTestConfig - Create DB connection
+18:35:47.472 [main] INFO  DataBaseTestConfig - Closing Result Set
+18:35:47.472 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:35:47.472 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:35:47.475 [main] INFO  DataBaseTestConfig - Create DB connection
+18:35:47.504 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:35:47.505 [main] INFO  DataBaseTestConfig - Create DB connection
+18:35:47.516 [main] INFO  DataBaseTestConfig - Closing Result Set
+18:35:47.516 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:35:47.517 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:35:47.517 [main] INFO  DataBaseTestConfig - Create DB connection
+18:35:47.527 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:35:47.527 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:35:47.527 [main] INFO  DataBaseTestConfig - Create DB connection
+18:35:47.539 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:35:47.539 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:35:47.540 [main] INFO  DataBaseTestConfig - Create DB connection
+18:35:47.550 [main] INFO  DataBaseTestConfig - Closing Result Set
+18:35:47.550 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:35:47.550 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:36:00.927 [main] ERROR InputReaderUtil - Error while reading user input from Shell
 java.util.NoSuchElementException: No line found
 	at java.util.Scanner.nextLine(Scanner.java:1540) ~[?:1.8.0_231]
 	at com.parkit.parkingsystem.util.InputReaderUtil.readVehicleRegistrationNumber(InputReaderUtil.java:28) ~[classes/:?]
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:55) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:37) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
 	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:2952) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at com.parkit.parkingsystem.service.GestionExceptionTest.exceptionTest(GestionExceptionTest.java:24) ~[test-classes/:?]
+	at com.parkit.parkingsystem.service.GestionExceptionTest.exceptionTest(GestionExceptionTest.java:19) ~[test-classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_231]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_231]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_231]
@@ -240,202 +192,66 @@ java.util.NoSuchElementException: No line found
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340) [surefire-booter-2.21.0.jar:2.21.0]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125) [surefire-booter-2.21.0.jar:2.21.0]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413) [surefire-booter-2.21.0.jar:2.21.0]
-19:53:20.701 [main] INFO  DataBaseConfig - Create DB connection
-19:53:21.024 [main] INFO  DataBaseConfig - Closing Result Set
-19:53:21.025 [main] INFO  DataBaseConfig - Closing Prepared Statement
-19:53:21.025 [main] INFO  DataBaseConfig - Closing DB connection
-19:53:21.074 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:21.105 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:21.108 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:21.139 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:21.140 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:21.154 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:53:21.154 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:21.154 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:21.155 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:21.165 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:21.166 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:21.166 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:21.181 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:21.182 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:23.182 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:23.195 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:53:23.196 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:23.196 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:23.196 [main] INFO  DataBaseConfig - Create DB connection
-19:53:23.209 [main] INFO  DataBaseConfig - Closing Result Set
-19:53:23.209 [main] INFO  DataBaseConfig - Closing Prepared Statement
-19:53:23.209 [main] INFO  DataBaseConfig - Closing DB connection
-19:53:23.209 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:23.222 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:23.222 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:23.222 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:23.233 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:23.233 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:23.233 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:23.243 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:53:23.243 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:23.244 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:23.246 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:23.271 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:23.272 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:23.281 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:53:23.281 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:23.281 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:23.281 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:23.291 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:23.291 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:23.291 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:23.301 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:23.302 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:23.302 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:23.313 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:53:23.313 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:23.313 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:23.316 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:23.341 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:23.343 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:23.370 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:23.370 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:23.381 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:53:23.382 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:23.382 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:23.382 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:23.394 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:23.394 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:23.394 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:23.406 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:23.407 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:25.408 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:25.418 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:53:25.419 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:25.419 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:25.419 [main] INFO  DataBaseConfig - Create DB connection
-19:53:25.428 [main] INFO  DataBaseConfig - Closing Result Set
-19:53:25.429 [main] INFO  DataBaseConfig - Closing Prepared Statement
-19:53:25.429 [main] INFO  DataBaseConfig - Closing DB connection
-19:53:25.429 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:25.446 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:25.446 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:25.446 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:25.460 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:25.461 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:25.461 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:25.471 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:53:25.472 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:25.472 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:25.474 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:25.498 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:25.498 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:25.509 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:53:25.509 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:25.509 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:25.509 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:25.520 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:25.520 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:25.520 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:25.530 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:25.531 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:53:25.531 [main] INFO  DataBaseTestConfig - Create DB connection
-19:53:25.540 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:53:25.540 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:53:25.541 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:59:32.135 [main] INFO  DataBaseConfig - Create DB connection
-15:59:32.427 [main] INFO  DataBaseConfig - Closing Result Set
-15:59:32.427 [main] INFO  DataBaseConfig - Closing Prepared Statement
-15:59:32.427 [main] INFO  DataBaseConfig - Closing DB connection
-15:59:32.433 [main] INFO  DataBaseConfig - Create DB connection
-15:59:32.445 [main] INFO  DataBaseConfig - Closing Result Set
-15:59:32.445 [main] INFO  DataBaseConfig - Closing Prepared Statement
-15:59:32.445 [main] INFO  DataBaseConfig - Closing DB connection
-15:59:32.447 [main] INFO  DataBaseConfig - Create DB connection
-15:59:32.459 [main] INFO  DataBaseConfig - Closing Result Set
-15:59:32.459 [main] INFO  DataBaseConfig - Closing Prepared Statement
-15:59:32.459 [main] INFO  DataBaseConfig - Closing DB connection
-15:59:32.461 [main] INFO  DataBaseConfig - Create DB connection
-15:59:32.468 [main] INFO  DataBaseConfig - Closing Result Set
-15:59:32.468 [main] INFO  DataBaseConfig - Closing Prepared Statement
-15:59:32.469 [main] INFO  DataBaseConfig - Closing DB connection
-15:59:32.478 [main] INFO  DataBaseConfig - Create DB connection
-15:59:32.486 [main] INFO  DataBaseConfig - Closing Result Set
-15:59:32.486 [main] INFO  DataBaseConfig - Closing Prepared Statement
-15:59:32.486 [main] INFO  DataBaseConfig - Closing DB connection
-15:59:32.492 [main] INFO  DataBaseConfig - Create DB connection
-15:59:32.500 [main] INFO  DataBaseConfig - Closing Result Set
-15:59:32.501 [main] INFO  DataBaseConfig - Closing Prepared Statement
-15:59:32.501 [main] INFO  DataBaseConfig - Closing DB connection
-15:59:32.502 [main] INFO  DataBaseConfig - Create DB connection
-15:59:32.510 [main] INFO  DataBaseConfig - Closing Result Set
-15:59:32.510 [main] INFO  DataBaseConfig - Closing Prepared Statement
-15:59:32.510 [main] INFO  DataBaseConfig - Closing DB connection
-15:59:32.511 [main] INFO  DataBaseConfig - Create DB connection
-15:59:32.519 [main] INFO  DataBaseConfig - Closing Result Set
-15:59:32.519 [main] INFO  DataBaseConfig - Closing Prepared Statement
-15:59:32.519 [main] INFO  DataBaseConfig - Closing DB connection
-15:59:32.521 [main] INFO  DataBaseConfig - Create DB connection
-15:59:32.528 [main] INFO  DataBaseConfig - Closing Result Set
-15:59:32.528 [main] INFO  DataBaseConfig - Closing Prepared Statement
-15:59:32.528 [main] INFO  DataBaseConfig - Closing DB connection
-15:59:32.531 [main] INFO  DataBaseConfig - Create DB connection
-15:59:32.541 [main] INFO  DataBaseConfig - Closing Result Set
-15:59:32.541 [main] INFO  DataBaseConfig - Closing Prepared Statement
-15:59:32.542 [main] INFO  DataBaseConfig - Closing DB connection
-15:59:32.543 [main] INFO  DataBaseConfig - Create DB connection
-15:59:32.551 [main] INFO  DataBaseConfig - Closing Result Set
-15:59:32.551 [main] INFO  DataBaseConfig - Closing Prepared Statement
-15:59:32.551 [main] INFO  DataBaseConfig - Closing DB connection
-15:59:32.552 [main] INFO  DataBaseConfig - Create DB connection
-15:59:32.559 [main] INFO  DataBaseConfig - Closing Result Set
-15:59:32.559 [main] INFO  DataBaseConfig - Closing Prepared Statement
-15:59:32.559 [main] INFO  DataBaseConfig - Closing DB connection
-16:06:36.979 [main] INFO  DataBaseConfig - Create DB connection
-16:06:38.828 [main] INFO  DataBaseConfig - Closing Result Set
-16:06:38.828 [main] INFO  DataBaseConfig - Closing Prepared Statement
-16:06:38.829 [main] INFO  DataBaseConfig - Closing DB connection
-16:10:50.350 [main] INFO  DataBaseConfig - Create DB connection
-16:10:52.190 [main] INFO  DataBaseConfig - Closing Result Set
-16:10:52.190 [main] INFO  DataBaseConfig - Closing Prepared Statement
-16:10:52.191 [main] INFO  DataBaseConfig - Closing DB connection
-16:30:42.487 [main] INFO  DataBaseConfig - Create DB connection
-16:30:42.774 [main] INFO  DataBaseConfig - Closing Result Set
-16:30:42.774 [main] INFO  DataBaseConfig - Closing Prepared Statement
-16:30:42.774 [main] INFO  DataBaseConfig - Closing DB connection
-16:30:42.786 [main] INFO  DataBaseConfig - Create DB connection
-16:30:42.798 [main] INFO  DataBaseConfig - Closing Result Set
-16:30:42.798 [main] INFO  DataBaseConfig - Closing Prepared Statement
-16:30:42.798 [main] INFO  DataBaseConfig - Closing DB connection
-16:31:00.295 [main] INFO  DataBaseConfig - Create DB connection
-16:31:02.160 [main] INFO  DataBaseConfig - Closing Result Set
-16:31:02.160 [main] INFO  DataBaseConfig - Closing Prepared Statement
-16:31:02.167 [main] INFO  DataBaseConfig - Closing DB connection
-16:31:41.542 [main] INFO  DataBaseConfig - Create DB connection
-16:31:43.395 [main] INFO  DataBaseConfig - Closing Result Set
-16:31:43.396 [main] INFO  DataBaseConfig - Closing Prepared Statement
-16:31:43.396 [main] INFO  DataBaseConfig - Closing DB connection
-18:22:03.862 [main] INFO  DataBaseConfig - Create DB connection
-18:22:04.154 [main] INFO  DataBaseConfig - Closing Result Set
-18:22:04.155 [main] INFO  DataBaseConfig - Closing Prepared Statement
-18:22:04.155 [main] INFO  DataBaseConfig - Closing DB connection
-18:22:04.167 [main] INFO  DataBaseConfig - Create DB connection
-18:22:04.181 [main] INFO  DataBaseConfig - Closing Result Set
-18:22:04.181 [main] INFO  DataBaseConfig - Closing Prepared Statement
-18:22:04.181 [main] INFO  DataBaseConfig - Closing DB connection
-18:22:43.204 [main] INFO  DataBaseConfig - Create DB connection
-18:22:45.078 [main] INFO  DataBaseConfig - Closing Result Set
-18:22:45.078 [main] INFO  DataBaseConfig - Closing Prepared Statement
-18:22:45.079 [main] INFO  DataBaseConfig - Closing DB connection
-18:24:09.402 [main] INFO  DataBaseConfig - Create DB connection
-18:24:32.286 [main] INFO  DataBaseConfig - Closing Result Set
-18:24:32.820 [main] INFO  DataBaseConfig - Closing Prepared Statement
-18:24:33.180 [main] INFO  DataBaseConfig - Closing DB connection
-18:53:11.269 [main] ERROR InputReaderUtil - Error while reading user input from Shell
+18:36:01.308 [main] INFO  DataBaseConfig - Create DB connection
+18:36:01.619 [main] INFO  DataBaseConfig - Closing Result Set
+18:36:01.619 [main] INFO  DataBaseConfig - Closing Prepared Statement
+18:36:01.620 [main] INFO  DataBaseConfig - Closing DB connection
+18:36:01.660 [main] INFO  DataBaseTestConfig - Create DB connection
+18:36:01.687 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:36:01.690 [main] INFO  DataBaseTestConfig - Create DB connection
+18:36:01.719 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:36:01.720 [main] INFO  DataBaseTestConfig - Create DB connection
+18:36:01.731 [main] INFO  DataBaseTestConfig - Closing Result Set
+18:36:01.731 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:36:01.731 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:36:01.732 [main] INFO  DataBaseTestConfig - Create DB connection
+18:36:01.742 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:36:01.742 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:36:01.743 [main] INFO  DataBaseTestConfig - Create DB connection
+18:36:01.762 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:36:01.763 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:36:03.763 [main] INFO  DataBaseTestConfig - Create DB connection
+18:36:03.776 [main] INFO  DataBaseTestConfig - Closing Result Set
+18:36:03.777 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:36:03.777 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:36:03.777 [main] INFO  DataBaseConfig - Create DB connection
+18:36:03.785 [main] INFO  DataBaseConfig - Closing Result Set
+18:36:03.785 [main] INFO  DataBaseConfig - Closing Prepared Statement
+18:36:03.786 [main] INFO  DataBaseConfig - Closing DB connection
+18:36:03.786 [main] INFO  DataBaseTestConfig - Create DB connection
+18:36:03.799 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:36:03.799 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:36:03.799 [main] INFO  DataBaseTestConfig - Create DB connection
+18:36:03.812 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:36:03.813 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:36:03.813 [main] INFO  DataBaseTestConfig - Create DB connection
+18:36:03.822 [main] INFO  DataBaseTestConfig - Closing Result Set
+18:36:03.822 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:36:03.823 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:36:03.825 [main] INFO  DataBaseTestConfig - Create DB connection
+18:36:03.848 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:36:03.849 [main] INFO  DataBaseTestConfig - Create DB connection
+18:36:03.859 [main] INFO  DataBaseTestConfig - Closing Result Set
+18:36:03.859 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:36:03.859 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:36:03.860 [main] INFO  DataBaseTestConfig - Create DB connection
+18:36:03.870 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:36:03.870 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:36:03.870 [main] INFO  DataBaseTestConfig - Create DB connection
+18:36:03.883 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:36:03.884 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:36:03.884 [main] INFO  DataBaseTestConfig - Create DB connection
+18:36:03.893 [main] INFO  DataBaseTestConfig - Closing Result Set
+18:36:03.894 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:36:03.894 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:40:49.215 [main] ERROR InputReaderUtil - Error while reading user input from Shell
 java.util.NoSuchElementException: No line found
 	at java.util.Scanner.nextLine(Scanner.java:1540) ~[?:1.8.0_231]
 	at com.parkit.parkingsystem.util.InputReaderUtil.readVehicleRegistrationNumber(InputReaderUtil.java:28) ~[classes/:?]
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:55) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:37) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
 	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:2952) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at com.parkit.parkingsystem.service.GestionExceptionTest.exceptionTest(GestionExceptionTest.java:24) ~[test-classes/:?]
+	at com.parkit.parkingsystem.service.GestionExceptionTest.exceptionTest(GestionExceptionTest.java:19) ~[test-classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_231]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_231]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_231]
@@ -499,185 +315,66 @@ java.util.NoSuchElementException: No line found
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340) [surefire-booter-2.21.0.jar:2.21.0]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125) [surefire-booter-2.21.0.jar:2.21.0]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413) [surefire-booter-2.21.0.jar:2.21.0]
-18:53:11.673 [main] INFO  DataBaseConfig - Create DB connection
-18:53:12.007 [main] INFO  DataBaseConfig - Closing Result Set
-18:53:12.007 [main] INFO  DataBaseConfig - Closing Prepared Statement
-18:53:12.008 [main] INFO  DataBaseConfig - Closing DB connection
-18:53:12.048 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:12.081 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:12.084 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:12.112 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:12.112 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:12.127 [main] INFO  DataBaseTestConfig - Closing Result Set
-18:53:12.127 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-18:53:12.128 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:12.128 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:12.140 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-18:53:12.140 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:12.140 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:12.157 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-18:53:12.157 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:14.158 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:14.172 [main] INFO  DataBaseTestConfig - Closing Result Set
-18:53:14.172 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-18:53:14.172 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:14.172 [main] INFO  DataBaseConfig - Create DB connection
-18:53:14.181 [main] INFO  DataBaseConfig - Closing Result Set
-18:53:14.181 [main] INFO  DataBaseConfig - Closing Prepared Statement
-18:53:14.181 [main] INFO  DataBaseConfig - Closing DB connection
-18:53:14.181 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:14.194 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-18:53:14.195 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:14.195 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:14.209 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-18:53:14.209 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:14.209 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:14.221 [main] INFO  DataBaseTestConfig - Closing Result Set
-18:53:14.221 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-18:53:14.221 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:14.223 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:14.248 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:14.249 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:14.260 [main] INFO  DataBaseTestConfig - Closing Result Set
-18:53:14.260 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-18:53:14.260 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:14.261 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:14.270 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-18:53:14.271 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:14.271 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:14.283 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-18:53:14.283 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:14.283 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:14.294 [main] INFO  DataBaseTestConfig - Closing Result Set
-18:53:14.295 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-18:53:14.295 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:14.297 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:14.322 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:14.324 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:14.350 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:14.350 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:14.361 [main] INFO  DataBaseTestConfig - Closing Result Set
-18:53:14.361 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-18:53:14.362 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:14.362 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:14.374 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-18:53:14.374 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:14.374 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:14.386 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-18:53:14.387 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:16.387 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:16.398 [main] INFO  DataBaseTestConfig - Closing Result Set
-18:53:16.398 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-18:53:16.399 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:16.399 [main] INFO  DataBaseConfig - Create DB connection
-18:53:16.406 [main] INFO  DataBaseConfig - Closing Result Set
-18:53:16.406 [main] INFO  DataBaseConfig - Closing Prepared Statement
-18:53:16.407 [main] INFO  DataBaseConfig - Closing DB connection
-18:53:16.407 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:16.423 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-18:53:16.423 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:16.423 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:16.435 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-18:53:16.435 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:16.435 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:16.443 [main] INFO  DataBaseTestConfig - Closing Result Set
-18:53:16.443 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-18:53:16.443 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:16.445 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:16.470 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:16.470 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:16.479 [main] INFO  DataBaseTestConfig - Closing Result Set
-18:53:16.479 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-18:53:16.480 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:16.480 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:16.491 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-18:53:16.491 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:16.491 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:16.501 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-18:53:16.502 [main] INFO  DataBaseTestConfig - Closing DB connection
-18:53:16.502 [main] INFO  DataBaseTestConfig - Create DB connection
-18:53:16.512 [main] INFO  DataBaseTestConfig - Closing Result Set
-18:53:16.512 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-18:53:16.513 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:10:43.813 [main] ERROR InputReaderUtil - Error while reading user input from Shell
+18:40:49.595 [main] INFO  DataBaseConfig - Create DB connection
+18:40:49.927 [main] INFO  DataBaseConfig - Closing Result Set
+18:40:49.928 [main] INFO  DataBaseConfig - Closing Prepared Statement
+18:40:49.928 [main] INFO  DataBaseConfig - Closing DB connection
+18:40:49.967 [main] INFO  DataBaseTestConfig - Create DB connection
+18:40:50.000 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:40:50.002 [main] INFO  DataBaseTestConfig - Create DB connection
+18:40:50.035 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:40:50.036 [main] INFO  DataBaseTestConfig - Create DB connection
+18:40:50.049 [main] INFO  DataBaseTestConfig - Closing Result Set
+18:40:50.050 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:40:50.050 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:40:50.050 [main] INFO  DataBaseTestConfig - Create DB connection
+18:40:50.061 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:40:50.062 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:40:50.062 [main] INFO  DataBaseTestConfig - Create DB connection
+18:40:50.079 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:40:50.080 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:40:52.080 [main] INFO  DataBaseTestConfig - Create DB connection
+18:40:52.093 [main] INFO  DataBaseTestConfig - Closing Result Set
+18:40:52.093 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:40:52.094 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:40:52.094 [main] INFO  DataBaseConfig - Create DB connection
+18:40:52.102 [main] INFO  DataBaseConfig - Closing Result Set
+18:40:52.102 [main] INFO  DataBaseConfig - Closing Prepared Statement
+18:40:52.102 [main] INFO  DataBaseConfig - Closing DB connection
+18:40:52.103 [main] INFO  DataBaseTestConfig - Create DB connection
+18:40:52.113 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:40:52.113 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:40:52.113 [main] INFO  DataBaseTestConfig - Create DB connection
+18:40:52.126 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:40:52.126 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:40:52.126 [main] INFO  DataBaseTestConfig - Create DB connection
+18:40:52.135 [main] INFO  DataBaseTestConfig - Closing Result Set
+18:40:52.135 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:40:52.135 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:40:52.139 [main] INFO  DataBaseTestConfig - Create DB connection
+18:40:52.164 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:40:52.164 [main] INFO  DataBaseTestConfig - Create DB connection
+18:40:52.176 [main] INFO  DataBaseTestConfig - Closing Result Set
+18:40:52.176 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:40:52.177 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:40:52.177 [main] INFO  DataBaseTestConfig - Create DB connection
+18:40:52.186 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:40:52.187 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:40:52.187 [main] INFO  DataBaseTestConfig - Create DB connection
+18:40:52.200 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:40:52.200 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:40:52.200 [main] INFO  DataBaseTestConfig - Create DB connection
+18:40:52.208 [main] INFO  DataBaseTestConfig - Closing Result Set
+18:40:52.209 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:40:52.209 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:43:30.348 [main] ERROR InputReaderUtil - Error while reading user input from Shell
 java.util.NoSuchElementException: No line found
 	at java.util.Scanner.nextLine(Scanner.java:1540) ~[?:1.8.0_231]
 	at com.parkit.parkingsystem.util.InputReaderUtil.readVehicleRegistrationNumber(InputReaderUtil.java:28) ~[classes/:?]
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:55) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
 	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:37) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
 	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:2952) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at com.parkit.parkingsystem.service.GestionExceptionTest.exceptionTest(GestionExceptionTest.java:24) ~[test-classes/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_231]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_231]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_231]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_231]
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675) ~[junit-platform-commons-1.5.1.jar:1.5.1]
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:124) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:74) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:104) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:62) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:43) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:35) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:202) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:198) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_231]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_231]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229) ~[junit-platform-launcher-1.5.1.jar:1.5.1]
-	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197) ~[junit-platform-launcher-1.5.1.jar:1.5.1]
-	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211) [junit-platform-launcher-1.5.1.jar:1.5.1]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191) [junit-platform-launcher-1.5.1.jar:1.5.1]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) [junit-platform-launcher-1.5.1.jar:1.5.1]
-	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:69) [junit5-rt.jar:?]
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33) [junit-rt.jar:?]
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230) [junit-rt.jar:?]
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58) [junit-rt.jar:?]
-19:13:51.825 [main] ERROR InputReaderUtil - Error while reading user input from Shell
-java.util.NoSuchElementException: No line found
-	at java.util.Scanner.nextLine(Scanner.java:1540) ~[?:1.8.0_231]
-	at com.parkit.parkingsystem.util.InputReaderUtil.readVehicleRegistrationNumber(InputReaderUtil.java:28) ~[classes/:?]
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:55) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:37) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:2952) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at com.parkit.parkingsystem.service.GestionExceptionTest.exceptionTest(GestionExceptionTest.java:24) ~[test-classes/:?]
+	at com.parkit.parkingsystem.service.GestionExceptionTest.exceptionTest(GestionExceptionTest.java:20) ~[test-classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_231]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_231]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_231]
@@ -741,1515 +438,55 @@ java.util.NoSuchElementException: No line found
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340) [surefire-booter-2.21.0.jar:2.21.0]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125) [surefire-booter-2.21.0.jar:2.21.0]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413) [surefire-booter-2.21.0.jar:2.21.0]
-19:13:52.217 [main] INFO  DataBaseConfig - Create DB connection
-19:13:52.565 [main] INFO  DataBaseConfig - Closing Result Set
-19:13:52.566 [main] INFO  DataBaseConfig - Closing Prepared Statement
-19:13:52.566 [main] INFO  DataBaseConfig - Closing DB connection
-19:13:52.595 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:52.626 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:52.627 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:52.656 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:52.657 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:52.668 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:13:52.668 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:13:52.669 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:52.669 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:52.679 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:13:52.680 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:52.680 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:52.695 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:13:52.695 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:54.696 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:54.708 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:13:54.709 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:13:54.709 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:54.709 [main] INFO  DataBaseConfig - Create DB connection
-19:13:54.717 [main] INFO  DataBaseConfig - Closing Result Set
-19:13:54.717 [main] INFO  DataBaseConfig - Closing Prepared Statement
-19:13:54.717 [main] INFO  DataBaseConfig - Closing DB connection
-19:13:54.717 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:54.730 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:13:54.730 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:54.730 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:54.744 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:13:54.744 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:54.744 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:54.752 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:13:54.752 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:13:54.753 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:54.754 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:54.777 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:54.778 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:54.788 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:13:54.788 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:13:54.788 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:54.789 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:54.799 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:13:54.800 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:54.800 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:54.813 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:13:54.814 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:54.814 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:54.822 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:13:54.822 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:13:54.822 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:54.826 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:54.850 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:54.852 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:54.891 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:54.891 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:54.902 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:13:54.902 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:13:54.902 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:54.902 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:54.912 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:13:54.912 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:54.912 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:54.924 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:13:54.925 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:56.925 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:56.936 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:13:56.936 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:13:56.936 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:56.936 [main] INFO  DataBaseConfig - Create DB connection
-19:13:56.944 [main] INFO  DataBaseConfig - Closing Result Set
-19:13:56.944 [main] INFO  DataBaseConfig - Closing Prepared Statement
-19:13:56.944 [main] INFO  DataBaseConfig - Closing DB connection
-19:13:56.944 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:56.956 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:13:56.957 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:56.957 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:56.967 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:13:56.968 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:56.968 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:56.978 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:13:56.978 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:13:56.979 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:56.980 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:57.004 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:57.004 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:57.014 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:13:57.014 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:13:57.014 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:57.015 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:57.025 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:13:57.025 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:57.025 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:57.037 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:13:57.037 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:13:57.038 [main] INFO  DataBaseTestConfig - Create DB connection
-19:13:57.047 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:13:57.047 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:13:57.047 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:34.913 [main] ERROR InputReaderUtil - Error while reading user input from Shell
-java.util.NoSuchElementException: No line found
-	at java.util.Scanner.nextLine(Scanner.java:1540) ~[?:1.8.0_231]
-	at com.parkit.parkingsystem.util.InputReaderUtil.readVehicleRegistrationNumber(InputReaderUtil.java:28) ~[classes/:?]
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:55) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:37) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:2952) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at com.parkit.parkingsystem.service.GestionExceptionTest.exceptionTest(GestionExceptionTest.java:24) ~[test-classes/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_231]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_231]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_231]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_231]
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675) ~[junit-platform-commons-1.5.1.jar:1.5.1]
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:124) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:74) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:104) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:62) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:43) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:35) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:202) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:198) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_231]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_231]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) [junit-platform-launcher-1.2.0.jar:1.2.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) [junit-platform-launcher-1.2.0.jar:1.2.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) [junit-platform-launcher-1.2.0.jar:1.2.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:132) [junit-platform-surefire-provider-1.2.0.jar:1.2.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:111) [junit-platform-surefire-provider-1.2.0.jar:1.2.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379) [surefire-booter-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340) [surefire-booter-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125) [surefire-booter-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413) [surefire-booter-2.21.0.jar:2.21.0]
-19:16:35.289 [main] INFO  DataBaseConfig - Create DB connection
-19:16:35.607 [main] INFO  DataBaseConfig - Closing Result Set
-19:16:35.608 [main] INFO  DataBaseConfig - Closing Prepared Statement
-19:16:35.608 [main] INFO  DataBaseConfig - Closing DB connection
-19:16:35.635 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:35.667 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:35.670 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:35.697 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:35.698 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:35.713 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:16:35.713 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:16:35.713 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:35.713 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:35.724 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:16:35.724 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:35.724 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:35.741 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:16:35.741 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:37.742 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:37.756 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:16:37.756 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:16:37.756 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:37.756 [main] INFO  DataBaseConfig - Create DB connection
-19:16:37.765 [main] INFO  DataBaseConfig - Closing Result Set
-19:16:37.765 [main] INFO  DataBaseConfig - Closing Prepared Statement
-19:16:37.765 [main] INFO  DataBaseConfig - Closing DB connection
-19:16:37.765 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:37.778 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:16:37.778 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:37.779 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:37.792 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:16:37.792 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:37.793 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:37.801 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:16:37.801 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:16:37.802 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:37.805 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:37.830 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:37.831 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:37.843 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:16:37.844 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:16:37.844 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:37.844 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:37.854 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:16:37.854 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:37.854 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:37.865 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:16:37.865 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:37.866 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:37.877 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:16:37.877 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:16:37.877 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:37.880 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:37.902 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:37.904 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:37.930 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:37.931 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:37.941 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:16:37.942 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:16:37.942 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:37.942 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:37.951 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:16:37.952 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:37.952 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:37.963 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:16:37.963 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:39.965 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:39.976 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:16:39.976 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:16:39.976 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:39.976 [main] INFO  DataBaseConfig - Create DB connection
-19:16:39.982 [main] INFO  DataBaseConfig - Closing Result Set
-19:16:39.982 [main] INFO  DataBaseConfig - Closing Prepared Statement
-19:16:39.982 [main] INFO  DataBaseConfig - Closing DB connection
-19:16:39.982 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:39.991 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:16:39.991 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:39.991 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:40.002 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:16:40.002 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:40.002 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:40.011 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:16:40.011 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:16:40.011 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:40.012 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:40.033 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:40.034 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:40.042 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:16:40.043 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:16:40.043 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:40.043 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:40.055 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:16:40.055 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:40.056 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:40.066 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:16:40.066 [main] INFO  DataBaseTestConfig - Closing DB connection
-19:16:40.067 [main] INFO  DataBaseTestConfig - Create DB connection
-19:16:40.075 [main] INFO  DataBaseTestConfig - Closing Result Set
-19:16:40.075 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-19:16:40.075 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:07:02.999 [main] INFO  DataBaseConfig - Create DB connection
-10:07:03.308 [main] INFO  DataBaseConfig - Closing Result Set
-10:07:03.308 [main] INFO  DataBaseConfig - Closing Prepared Statement
-10:07:03.309 [main] INFO  DataBaseConfig - Closing DB connection
-10:07:03.315 [main] INFO  DataBaseConfig - Create DB connection
-10:07:03.327 [main] INFO  DataBaseConfig - Closing Result Set
-10:07:03.327 [main] INFO  DataBaseConfig - Closing Prepared Statement
-10:07:03.327 [main] INFO  DataBaseConfig - Closing DB connection
-10:07:03.329 [main] INFO  DataBaseConfig - Create DB connection
-10:07:03.344 [main] INFO  DataBaseConfig - Closing Result Set
-10:07:03.344 [main] INFO  DataBaseConfig - Closing Prepared Statement
-10:07:03.345 [main] INFO  DataBaseConfig - Closing DB connection
-10:07:03.346 [main] INFO  DataBaseConfig - Create DB connection
-10:07:03.356 [main] INFO  DataBaseConfig - Closing Result Set
-10:07:03.356 [main] INFO  DataBaseConfig - Closing Prepared Statement
-10:07:03.357 [main] INFO  DataBaseConfig - Closing DB connection
-10:07:03.366 [main] INFO  DataBaseConfig - Create DB connection
-10:07:03.376 [main] INFO  DataBaseConfig - Closing Result Set
-10:07:03.376 [main] INFO  DataBaseConfig - Closing Prepared Statement
-10:07:03.376 [main] INFO  DataBaseConfig - Closing DB connection
-10:07:03.382 [main] INFO  DataBaseConfig - Create DB connection
-10:07:03.390 [main] INFO  DataBaseConfig - Closing Result Set
-10:07:03.391 [main] INFO  DataBaseConfig - Closing Prepared Statement
-10:07:03.391 [main] INFO  DataBaseConfig - Closing DB connection
-10:07:03.392 [main] INFO  DataBaseConfig - Create DB connection
-10:07:03.401 [main] INFO  DataBaseConfig - Closing Result Set
-10:07:03.402 [main] INFO  DataBaseConfig - Closing Prepared Statement
-10:07:03.402 [main] INFO  DataBaseConfig - Closing DB connection
-10:07:03.403 [main] INFO  DataBaseConfig - Create DB connection
-10:07:03.411 [main] INFO  DataBaseConfig - Closing Result Set
-10:07:03.411 [main] INFO  DataBaseConfig - Closing Prepared Statement
-10:07:03.412 [main] INFO  DataBaseConfig - Closing DB connection
-10:07:03.413 [main] INFO  DataBaseConfig - Create DB connection
-10:07:03.420 [main] INFO  DataBaseConfig - Closing Result Set
-10:07:03.420 [main] INFO  DataBaseConfig - Closing Prepared Statement
-10:07:03.421 [main] INFO  DataBaseConfig - Closing DB connection
-10:07:03.422 [main] INFO  DataBaseConfig - Create DB connection
-10:07:03.432 [main] INFO  DataBaseConfig - Closing Result Set
-10:07:03.432 [main] INFO  DataBaseConfig - Closing Prepared Statement
-10:07:03.432 [main] INFO  DataBaseConfig - Closing DB connection
-10:07:03.433 [main] INFO  DataBaseConfig - Create DB connection
-10:07:03.440 [main] INFO  DataBaseConfig - Closing Result Set
-10:07:03.440 [main] INFO  DataBaseConfig - Closing Prepared Statement
-10:07:03.440 [main] INFO  DataBaseConfig - Closing DB connection
-10:07:03.442 [main] INFO  DataBaseConfig - Create DB connection
-10:07:03.448 [main] INFO  DataBaseConfig - Closing Result Set
-10:07:03.449 [main] INFO  DataBaseConfig - Closing Prepared Statement
-10:07:03.449 [main] INFO  DataBaseConfig - Closing DB connection
-11:09:00.959 [main] ERROR InputReaderUtil - Error while reading user input from Shell
-java.util.NoSuchElementException: No line found
-	at java.util.Scanner.nextLine(Scanner.java:1540) ~[?:1.8.0_231]
-	at com.parkit.parkingsystem.util.InputReaderUtil.readVehicleRegistrationNumber(InputReaderUtil.java:28) ~[classes/:?]
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:55) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:37) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:2952) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at com.parkit.parkingsystem.service.GestionExceptionTest.exceptionTest(GestionExceptionTest.java:24) ~[test-classes/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_231]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_231]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_231]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_231]
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675) ~[junit-platform-commons-1.5.1.jar:1.5.1]
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:124) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:74) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:104) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:62) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:43) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:35) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:202) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:198) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_231]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_231]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) [junit-platform-launcher-1.2.0.jar:1.2.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) [junit-platform-launcher-1.2.0.jar:1.2.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) [junit-platform-launcher-1.2.0.jar:1.2.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:132) [junit-platform-surefire-provider-1.2.0.jar:1.2.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:111) [junit-platform-surefire-provider-1.2.0.jar:1.2.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379) [surefire-booter-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340) [surefire-booter-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125) [surefire-booter-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413) [surefire-booter-2.21.0.jar:2.21.0]
-11:09:01.356 [main] INFO  DataBaseConfig - Create DB connection
-11:09:01.682 [main] INFO  DataBaseConfig - Closing Result Set
-11:09:01.682 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:09:01.682 [main] INFO  DataBaseConfig - Closing DB connection
-11:09:01.717 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:01.747 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:01.749 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:01.779 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:01.780 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:01.794 [main] INFO  DataBaseTestConfig - Closing Result Set
-11:09:01.794 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:09:01.794 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:01.795 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:01.805 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:09:01.806 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:01.806 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:01.822 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:09:01.823 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:03.824 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:03.837 [main] INFO  DataBaseTestConfig - Closing Result Set
-11:09:03.837 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:09:03.837 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:03.837 [main] INFO  DataBaseConfig - Create DB connection
-11:09:03.846 [main] INFO  DataBaseConfig - Closing Result Set
-11:09:03.846 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:09:03.847 [main] INFO  DataBaseConfig - Closing DB connection
-11:09:03.847 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:03.864 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:09:03.864 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:03.865 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:03.879 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:09:03.879 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:03.879 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:03.887 [main] INFO  DataBaseTestConfig - Closing Result Set
-11:09:03.888 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:09:03.888 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:03.890 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:03.914 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:03.914 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:03.925 [main] INFO  DataBaseTestConfig - Closing Result Set
-11:09:03.926 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:09:03.926 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:03.926 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:03.939 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:09:03.939 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:03.940 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:03.953 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:09:03.953 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:03.954 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:03.962 [main] INFO  DataBaseTestConfig - Closing Result Set
-11:09:03.962 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:09:03.963 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:03.966 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:03.990 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:03.992 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:04.018 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:04.018 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:04.031 [main] INFO  DataBaseTestConfig - Closing Result Set
-11:09:04.031 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:09:04.032 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:04.032 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:04.043 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:09:04.043 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:04.043 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:04.055 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:09:04.056 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:06.056 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:06.068 [main] INFO  DataBaseTestConfig - Closing Result Set
-11:09:06.068 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:09:06.068 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:06.068 [main] INFO  DataBaseConfig - Create DB connection
-11:09:06.075 [main] INFO  DataBaseConfig - Closing Result Set
-11:09:06.075 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:09:06.075 [main] INFO  DataBaseConfig - Closing DB connection
-11:09:06.075 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:06.087 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:09:06.088 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:06.088 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:06.099 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:09:06.100 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:06.100 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:06.110 [main] INFO  DataBaseTestConfig - Closing Result Set
-11:09:06.111 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:09:06.111 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:06.112 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:06.135 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:06.135 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:06.144 [main] INFO  DataBaseTestConfig - Closing Result Set
-11:09:06.144 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:09:06.144 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:06.145 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:06.153 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:09:06.153 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:06.153 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:06.166 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:09:06.166 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:09:06.167 [main] INFO  DataBaseTestConfig - Create DB connection
-11:09:06.174 [main] INFO  DataBaseTestConfig - Closing Result Set
-11:09:06.174 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:09:06.174 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:13:00.860 [main] INFO  App - Initializing Parking System
-11:13:00.862 [main] INFO  InteractiveShell - App initialized!!!
-11:13:44.609 [main] INFO  App - Initializing Parking System
-11:13:44.611 [main] INFO  InteractiveShell - App initialized!!!
-11:13:51.531 [main] INFO  DataBaseConfig - Create DB connection
-11:13:51.814 [main] INFO  DataBaseConfig - Closing Result Set
-11:13:51.814 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:13:51.814 [main] INFO  DataBaseConfig - Closing DB connection
-11:13:56.266 [main] INFO  DataBaseConfig - Create DB connection
-11:13:56.290 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:13:56.291 [main] INFO  DataBaseConfig - Closing DB connection
-11:13:56.291 [main] INFO  DataBaseConfig - Create DB connection
-11:13:56.307 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:13:56.307 [main] INFO  DataBaseConfig - Closing DB connection
-11:14:25.513 [main] INFO  DataBaseConfig - Create DB connection
-11:14:25.526 [main] INFO  DataBaseConfig - Closing Result Set
-11:14:25.526 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:14:25.526 [main] INFO  DataBaseConfig - Closing DB connection
-11:14:25.527 [main] INFO  DataBaseConfig - Create DB connection
-11:14:25.534 [main] INFO  DataBaseConfig - Closing Result Set
-11:14:25.534 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:14:25.534 [main] INFO  DataBaseConfig - Closing DB connection
-11:14:25.535 [main] INFO  DataBaseConfig - Create DB connection
-11:14:25.552 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:14:25.552 [main] INFO  DataBaseConfig - Closing DB connection
-11:14:25.553 [main] INFO  DataBaseConfig - Create DB connection
-11:14:25.567 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:14:25.567 [main] INFO  DataBaseConfig - Closing DB connection
-11:17:08.755 [main] ERROR InputReaderUtil - Error while reading user input from Shell
-java.util.NoSuchElementException: No line found
-	at java.util.Scanner.nextLine(Scanner.java:1540) ~[?:1.8.0_231]
-	at com.parkit.parkingsystem.util.InputReaderUtil.readVehicleRegistrationNumber(InputReaderUtil.java:28) ~[classes/:?]
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:55) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:37) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:2952) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at com.parkit.parkingsystem.service.GestionExceptionTest.exceptionTest(GestionExceptionTest.java:24) ~[test-classes/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_231]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_231]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_231]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_231]
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675) ~[junit-platform-commons-1.5.1.jar:1.5.1]
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:124) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:74) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:104) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:62) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:43) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:35) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:202) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:198) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_231]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_231]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) [junit-platform-launcher-1.2.0.jar:1.2.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) [junit-platform-launcher-1.2.0.jar:1.2.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) [junit-platform-launcher-1.2.0.jar:1.2.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:132) [junit-platform-surefire-provider-1.2.0.jar:1.2.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:111) [junit-platform-surefire-provider-1.2.0.jar:1.2.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379) [surefire-booter-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340) [surefire-booter-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125) [surefire-booter-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413) [surefire-booter-2.21.0.jar:2.21.0]
-11:17:09.151 [main] INFO  DataBaseConfig - Create DB connection
-11:17:09.479 [main] INFO  DataBaseConfig - Closing Result Set
-11:17:09.480 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:17:09.480 [main] INFO  DataBaseConfig - Closing DB connection
-11:17:09.508 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:09.543 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:09.546 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:09.575 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:09.576 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:09.586 [main] INFO  DataBaseTestConfig - Closing Result Set
-11:17:09.586 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:17:09.587 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:09.587 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:09.601 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:17:09.601 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:09.601 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:09.618 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:17:09.619 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:11.619 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:11.633 [main] INFO  DataBaseTestConfig - Closing Result Set
-11:17:11.633 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:17:11.633 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:11.633 [main] INFO  DataBaseConfig - Create DB connection
-11:17:11.643 [main] INFO  DataBaseConfig - Closing Result Set
-11:17:11.643 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:17:11.644 [main] INFO  DataBaseConfig - Closing DB connection
-11:17:11.644 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:11.657 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:17:11.657 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:11.658 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:11.669 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:17:11.669 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:11.670 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:11.681 [main] INFO  DataBaseTestConfig - Closing Result Set
-11:17:11.681 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:17:11.681 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:11.684 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:11.709 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:11.710 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:11.721 [main] INFO  DataBaseTestConfig - Closing Result Set
-11:17:11.721 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:17:11.721 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:11.722 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:11.731 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:17:11.731 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:11.732 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:11.744 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:17:11.744 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:11.744 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:11.754 [main] INFO  DataBaseTestConfig - Closing Result Set
-11:17:11.754 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:17:11.754 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:11.758 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:11.782 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:11.784 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:11.811 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:11.812 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:11.823 [main] INFO  DataBaseTestConfig - Closing Result Set
-11:17:11.823 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:17:11.823 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:11.824 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:11.833 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:17:11.833 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:11.833 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:11.843 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:17:11.843 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:13.844 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:13.855 [main] INFO  DataBaseTestConfig - Closing Result Set
-11:17:13.855 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:17:13.855 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:13.855 [main] INFO  DataBaseConfig - Create DB connection
-11:17:13.862 [main] INFO  DataBaseConfig - Closing Result Set
-11:17:13.862 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:17:13.863 [main] INFO  DataBaseConfig - Closing DB connection
-11:17:13.863 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:13.875 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:17:13.876 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:13.876 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:13.887 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:17:13.888 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:13.888 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:13.894 [main] INFO  DataBaseTestConfig - Closing Result Set
-11:17:13.894 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:17:13.894 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:13.896 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:13.922 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:13.923 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:13.932 [main] INFO  DataBaseTestConfig - Closing Result Set
-11:17:13.932 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:17:13.932 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:13.933 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:13.942 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:17:13.942 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:13.942 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:13.952 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:17:13.953 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:17:13.953 [main] INFO  DataBaseTestConfig - Create DB connection
-11:17:13.963 [main] INFO  DataBaseTestConfig - Closing Result Set
-11:17:13.963 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-11:17:13.963 [main] INFO  DataBaseTestConfig - Closing DB connection
-11:24:19.354 [main] INFO  App - Initializing Parking System
-11:24:19.356 [main] INFO  InteractiveShell - App initialized!!!
-11:24:23.021 [main] INFO  DataBaseConfig - Create DB connection
-11:24:23.302 [main] INFO  DataBaseConfig - Closing Result Set
-11:24:23.302 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:24:23.302 [main] INFO  DataBaseConfig - Closing DB connection
-11:24:25.102 [main] INFO  DataBaseConfig - Create DB connection
-11:24:25.128 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:24:25.129 [main] INFO  DataBaseConfig - Closing DB connection
-11:24:25.129 [main] INFO  DataBaseConfig - Create DB connection
-11:24:25.146 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:24:25.147 [main] INFO  DataBaseConfig - Closing DB connection
-11:24:29.901 [main] INFO  DataBaseConfig - Create DB connection
-11:24:29.915 [main] INFO  DataBaseConfig - Closing Result Set
-11:24:29.915 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:24:29.915 [main] INFO  DataBaseConfig - Closing DB connection
-11:24:29.915 [main] INFO  DataBaseConfig - Create DB connection
-11:24:29.923 [main] INFO  DataBaseConfig - Closing Result Set
-11:24:29.923 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:24:29.923 [main] INFO  DataBaseConfig - Closing DB connection
-11:24:29.924 [main] INFO  DataBaseConfig - Create DB connection
-11:24:29.941 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:24:29.941 [main] INFO  DataBaseConfig - Closing DB connection
-11:24:29.941 [main] INFO  DataBaseConfig - Create DB connection
-11:24:29.954 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:24:29.954 [main] INFO  DataBaseConfig - Closing DB connection
-11:24:45.594 [main] INFO  DataBaseConfig - Create DB connection
-11:24:45.606 [main] INFO  DataBaseConfig - Closing Result Set
-11:24:45.606 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:24:45.606 [main] INFO  DataBaseConfig - Closing DB connection
-11:24:47.774 [main] INFO  DataBaseConfig - Create DB connection
-11:24:47.795 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:24:47.796 [main] INFO  DataBaseConfig - Closing DB connection
-11:24:47.796 [main] INFO  DataBaseConfig - Create DB connection
-11:24:47.809 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:24:47.809 [main] INFO  DataBaseConfig - Closing DB connection
-11:24:54.233 [main] INFO  DataBaseConfig - Create DB connection
-11:24:54.244 [main] INFO  DataBaseConfig - Closing Result Set
-11:24:54.244 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:24:54.244 [main] INFO  DataBaseConfig - Closing DB connection
-11:24:54.244 [main] INFO  DataBaseConfig - Create DB connection
-11:24:54.251 [main] INFO  DataBaseConfig - Closing Result Set
-11:24:54.251 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:24:54.251 [main] INFO  DataBaseConfig - Closing DB connection
-11:24:54.251 [main] INFO  DataBaseConfig - Create DB connection
-11:24:54.266 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:24:54.267 [main] INFO  DataBaseConfig - Closing DB connection
-11:24:54.267 [main] INFO  DataBaseConfig - Create DB connection
-11:24:54.278 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:24:54.278 [main] INFO  DataBaseConfig - Closing DB connection
-11:25:30.365 [main] INFO  App - Initializing Parking System
-11:25:30.367 [main] INFO  InteractiveShell - App initialized!!!
-11:25:38.473 [main] INFO  DataBaseConfig - Create DB connection
-11:25:38.763 [main] INFO  DataBaseConfig - Closing Result Set
-11:25:38.763 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:25:38.764 [main] INFO  DataBaseConfig - Closing DB connection
-11:25:38.764 [main] INFO  DataBaseConfig - Create DB connection
-11:25:38.776 [main] INFO  DataBaseConfig - Closing Result Set
-11:25:38.776 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:25:38.777 [main] INFO  DataBaseConfig - Closing DB connection
-11:25:38.777 [main] INFO  DataBaseConfig - Create DB connection
-11:25:38.795 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:25:38.795 [main] INFO  DataBaseConfig - Closing DB connection
-11:25:38.795 [main] INFO  DataBaseConfig - Create DB connection
-11:25:38.806 [main] INFO  DataBaseConfig - Closing Prepared Statement
-11:25:38.806 [main] INFO  DataBaseConfig - Closing DB connection
-13:30:36.608 [main] INFO  App - Initializing Parking System
-13:30:36.610 [main] INFO  InteractiveShell - App initialized!!!
-13:31:01.817 [main] INFO  DataBaseConfig - Create DB connection
-13:31:03.702 [main] INFO  DataBaseConfig - Closing Result Set
-13:31:03.703 [main] INFO  DataBaseConfig - Closing Prepared Statement
-13:31:03.704 [main] INFO  DataBaseConfig - Closing DB connection
-13:31:23.156 [main] INFO  DataBaseConfig - Create DB connection
-13:34:12.048 [main] INFO  App - Initializing Parking System
-13:34:12.051 [main] INFO  InteractiveShell - App initialized!!!
-13:34:47.909 [main] INFO  DataBaseConfig - Create DB connection
-13:36:41.990 [main] INFO  DataBaseConfig - Closing Result Set
-13:36:43.145 [main] INFO  DataBaseConfig - Closing Prepared Statement
-13:36:43.512 [main] INFO  DataBaseConfig - Closing DB connection
-13:36:57.719 [main] INFO  DataBaseConfig - Create DB connection
-13:36:57.896 [main] INFO  DataBaseConfig - Closing Result Set
-13:36:57.896 [main] INFO  DataBaseConfig - Closing Prepared Statement
-13:36:57.897 [main] INFO  DataBaseConfig - Closing DB connection
-13:37:03.104 [main] INFO  DataBaseConfig - Create DB connection
-13:37:03.296 [main] INFO  DataBaseConfig - Closing Prepared Statement
-13:37:03.297 [main] INFO  DataBaseConfig - Closing DB connection
-13:37:04.560 [main] INFO  DataBaseConfig - Create DB connection
-13:37:04.742 [main] INFO  DataBaseConfig - Closing Prepared Statement
-13:37:04.743 [main] INFO  DataBaseConfig - Closing DB connection
-14:15:08.308 [main] INFO  App - Initializing Parking System
-14:15:08.310 [main] INFO  InteractiveShell - App initialized!!!
-14:15:26.389 [main] INFO  DataBaseConfig - Create DB connection
-14:15:26.682 [main] INFO  DataBaseConfig - Closing Result Set
-14:15:26.682 [main] INFO  DataBaseConfig - Closing Prepared Statement
-14:15:26.683 [main] INFO  DataBaseConfig - Closing DB connection
-14:15:31.214 [main] INFO  DataBaseConfig - Create DB connection
-14:15:31.240 [main] INFO  DataBaseConfig - Closing Prepared Statement
-14:15:31.240 [main] INFO  DataBaseConfig - Closing DB connection
-14:15:31.240 [main] INFO  DataBaseConfig - Create DB connection
-14:15:31.257 [main] INFO  DataBaseConfig - Closing Prepared Statement
-14:15:31.257 [main] INFO  DataBaseConfig - Closing DB connection
-14:15:35.725 [main] INFO  DataBaseConfig - Create DB connection
-14:15:35.737 [main] INFO  DataBaseConfig - Closing Result Set
-14:15:35.737 [main] INFO  DataBaseConfig - Closing Prepared Statement
-14:15:35.737 [main] INFO  DataBaseConfig - Closing DB connection
-14:15:35.737 [main] INFO  DataBaseConfig - Create DB connection
-14:15:35.745 [main] INFO  DataBaseConfig - Closing Result Set
-14:15:35.745 [main] INFO  DataBaseConfig - Closing Prepared Statement
-14:15:35.745 [main] INFO  DataBaseConfig - Closing DB connection
-14:15:35.745 [main] INFO  DataBaseConfig - Create DB connection
-14:15:35.763 [main] INFO  DataBaseConfig - Closing Prepared Statement
-14:15:35.763 [main] INFO  DataBaseConfig - Closing DB connection
-14:15:35.763 [main] INFO  DataBaseConfig - Create DB connection
-14:15:35.776 [main] INFO  DataBaseConfig - Closing Prepared Statement
-14:15:35.776 [main] INFO  DataBaseConfig - Closing DB connection
-14:15:44.199 [main] INFO  DataBaseConfig - Create DB connection
-14:15:44.211 [main] INFO  DataBaseConfig - Closing Result Set
-14:15:44.211 [main] INFO  DataBaseConfig - Closing Prepared Statement
-14:15:44.211 [main] INFO  DataBaseConfig - Closing DB connection
-14:15:47.794 [main] INFO  DataBaseConfig - Create DB connection
-14:15:47.815 [main] INFO  DataBaseConfig - Closing Prepared Statement
-14:15:47.816 [main] INFO  DataBaseConfig - Closing DB connection
-14:15:47.816 [main] INFO  DataBaseConfig - Create DB connection
-14:15:47.830 [main] INFO  DataBaseConfig - Closing Prepared Statement
-14:15:47.830 [main] INFO  DataBaseConfig - Closing DB connection
-14:15:58.853 [main] INFO  DataBaseConfig - Create DB connection
-14:15:58.865 [main] INFO  DataBaseConfig - Closing Result Set
-14:15:58.865 [main] INFO  DataBaseConfig - Closing Prepared Statement
-14:15:58.865 [main] INFO  DataBaseConfig - Closing DB connection
-14:15:58.865 [main] INFO  DataBaseConfig - Create DB connection
-14:15:58.871 [main] INFO  DataBaseConfig - Closing Result Set
-14:15:58.872 [main] INFO  DataBaseConfig - Closing Prepared Statement
-14:15:58.872 [main] INFO  DataBaseConfig - Closing DB connection
-14:15:58.872 [main] INFO  DataBaseConfig - Create DB connection
-14:15:58.888 [main] INFO  DataBaseConfig - Closing Prepared Statement
-14:15:58.888 [main] INFO  DataBaseConfig - Closing DB connection
-14:15:58.888 [main] INFO  DataBaseConfig - Create DB connection
-14:15:58.900 [main] INFO  DataBaseConfig - Closing Prepared Statement
-14:15:58.900 [main] INFO  DataBaseConfig - Closing DB connection
-10:33:21.401 [main] ERROR InputReaderUtil - Error while reading user input from Shell
-java.util.NoSuchElementException: No line found
-	at java.util.Scanner.nextLine(Scanner.java:1540) ~[?:1.8.0_231]
-	at com.parkit.parkingsystem.util.InputReaderUtil.readVehicleRegistrationNumber(InputReaderUtil.java:28) ~[classes/:?]
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:55) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:37) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:2952) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at com.parkit.parkingsystem.service.GestionExceptionTest.exceptionTest(GestionExceptionTest.java:24) ~[test-classes/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_231]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_231]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_231]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_231]
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675) ~[junit-platform-commons-1.5.1.jar:1.5.1]
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:124) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:74) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:104) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:62) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:43) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:35) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:202) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:198) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_231]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_231]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) [junit-platform-launcher-1.2.0.jar:1.2.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) [junit-platform-launcher-1.2.0.jar:1.2.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) [junit-platform-launcher-1.2.0.jar:1.2.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:132) [junit-platform-surefire-provider-1.2.0.jar:1.2.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:111) [junit-platform-surefire-provider-1.2.0.jar:1.2.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379) [surefire-booter-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340) [surefire-booter-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125) [surefire-booter-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413) [surefire-booter-2.21.0.jar:2.21.0]
-10:33:21.812 [main] INFO  DataBaseConfig - Create DB connection
-10:33:22.159 [main] INFO  DataBaseConfig - Closing Result Set
-10:33:22.160 [main] INFO  DataBaseConfig - Closing Prepared Statement
-10:33:22.160 [main] INFO  DataBaseConfig - Closing DB connection
-10:33:22.193 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:22.227 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:22.230 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:22.258 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:22.259 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:22.273 [main] INFO  DataBaseTestConfig - Closing Result Set
-10:33:22.273 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:22.274 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:22.274 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:22.285 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:22.286 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:22.286 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:22.303 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:22.303 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:24.304 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:24.318 [main] INFO  DataBaseTestConfig - Closing Result Set
-10:33:24.318 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:24.319 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:24.319 [main] INFO  DataBaseConfig - Create DB connection
-10:33:24.327 [main] INFO  DataBaseConfig - Closing Result Set
-10:33:24.328 [main] INFO  DataBaseConfig - Closing Prepared Statement
-10:33:24.328 [main] INFO  DataBaseConfig - Closing DB connection
-10:33:24.328 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:24.345 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:24.345 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:24.346 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:24.359 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:24.359 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:24.359 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:24.367 [main] INFO  DataBaseTestConfig - Closing Result Set
-10:33:24.368 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:24.368 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:24.371 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:24.394 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:24.395 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:24.407 [main] INFO  DataBaseTestConfig - Closing Result Set
-10:33:24.407 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:24.408 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:24.408 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:24.421 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:24.421 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:24.421 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:24.433 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:24.434 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:24.434 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:24.442 [main] INFO  DataBaseTestConfig - Closing Result Set
-10:33:24.442 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:24.443 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:24.446 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:24.470 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:24.472 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:24.499 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:24.499 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:24.509 [main] INFO  DataBaseTestConfig - Closing Result Set
-10:33:24.510 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:24.510 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:24.510 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:24.523 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:24.524 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:24.524 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:24.536 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:24.536 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:26.537 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:26.547 [main] INFO  DataBaseTestConfig - Closing Result Set
-10:33:26.548 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:26.548 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:26.548 [main] INFO  DataBaseConfig - Create DB connection
-10:33:26.555 [main] INFO  DataBaseConfig - Closing Result Set
-10:33:26.555 [main] INFO  DataBaseConfig - Closing Prepared Statement
-10:33:26.555 [main] INFO  DataBaseConfig - Closing DB connection
-10:33:26.555 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:26.568 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:26.568 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:26.568 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:26.578 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:26.578 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:26.579 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:26.589 [main] INFO  DataBaseTestConfig - Closing Result Set
-10:33:26.589 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:26.589 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:26.591 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:26.614 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:26.615 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:26.626 [main] INFO  DataBaseTestConfig - Closing Result Set
-10:33:26.626 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:26.626 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:26.626 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:26.638 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:26.638 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:26.639 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:26.649 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:26.649 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:26.649 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:26.659 [main] INFO  DataBaseTestConfig - Closing Result Set
-10:33:26.659 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:26.660 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:34.858 [main] ERROR InputReaderUtil - Error while reading user input from Shell
-java.util.NoSuchElementException: No line found
-	at java.util.Scanner.nextLine(Scanner.java:1540) ~[?:1.8.0_231]
-	at com.parkit.parkingsystem.util.InputReaderUtil.readVehicleRegistrationNumber(InputReaderUtil.java:28) ~[classes/:?]
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:55) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:37) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:2952) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at com.parkit.parkingsystem.service.GestionExceptionTest.exceptionTest(GestionExceptionTest.java:24) ~[test-classes/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_231]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_231]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_231]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_231]
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675) ~[junit-platform-commons-1.5.1.jar:1.5.1]
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:124) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:74) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:104) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:62) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:43) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:35) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:202) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:198) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_231]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_231]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) [junit-platform-launcher-1.2.0.jar:1.2.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) [junit-platform-launcher-1.2.0.jar:1.2.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) [junit-platform-launcher-1.2.0.jar:1.2.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:132) [junit-platform-surefire-provider-1.2.0.jar:1.2.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:111) [junit-platform-surefire-provider-1.2.0.jar:1.2.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379) [surefire-booter-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340) [surefire-booter-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125) [surefire-booter-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413) [surefire-booter-2.21.0.jar:2.21.0]
-10:33:35.264 [main] INFO  DataBaseConfig - Create DB connection
-10:33:35.594 [main] INFO  DataBaseConfig - Closing Result Set
-10:33:35.594 [main] INFO  DataBaseConfig - Closing Prepared Statement
-10:33:35.594 [main] INFO  DataBaseConfig - Closing DB connection
-10:33:35.632 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:35.662 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:35.663 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:35.690 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:35.691 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:35.704 [main] INFO  DataBaseTestConfig - Closing Result Set
-10:33:35.704 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:35.705 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:35.705 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:35.715 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:35.715 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:35.715 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:35.732 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:35.733 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:37.733 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:37.745 [main] INFO  DataBaseTestConfig - Closing Result Set
-10:33:37.746 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:37.746 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:37.746 [main] INFO  DataBaseConfig - Create DB connection
-10:33:37.755 [main] INFO  DataBaseConfig - Closing Result Set
-10:33:37.755 [main] INFO  DataBaseConfig - Closing Prepared Statement
-10:33:37.755 [main] INFO  DataBaseConfig - Closing DB connection
-10:33:37.756 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:37.768 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:37.769 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:37.769 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:37.782 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:37.782 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:37.783 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:37.794 [main] INFO  DataBaseTestConfig - Closing Result Set
-10:33:37.794 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:37.795 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:37.797 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:37.821 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:37.822 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:37.834 [main] INFO  DataBaseTestConfig - Closing Result Set
-10:33:37.834 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:37.834 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:37.835 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:37.848 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:37.848 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:37.849 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:37.863 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:37.863 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:37.864 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:37.874 [main] INFO  DataBaseTestConfig - Closing Result Set
-10:33:37.874 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:37.874 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:37.877 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:37.901 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:37.904 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:37.929 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:37.930 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:37.942 [main] INFO  DataBaseTestConfig - Closing Result Set
-10:33:37.942 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:37.942 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:37.942 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:37.952 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:37.952 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:37.952 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:37.962 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:37.963 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:39.964 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:39.975 [main] INFO  DataBaseTestConfig - Closing Result Set
-10:33:39.975 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:39.975 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:39.975 [main] INFO  DataBaseConfig - Create DB connection
-10:33:39.982 [main] INFO  DataBaseConfig - Closing Result Set
-10:33:39.982 [main] INFO  DataBaseConfig - Closing Prepared Statement
-10:33:39.982 [main] INFO  DataBaseConfig - Closing DB connection
-10:33:39.982 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:39.994 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:39.995 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:39.995 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:40.006 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:40.006 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:40.007 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:40.014 [main] INFO  DataBaseTestConfig - Closing Result Set
-10:33:40.014 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:40.015 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:40.017 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:40.041 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:40.042 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:40.053 [main] INFO  DataBaseTestConfig - Closing Result Set
-10:33:40.053 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:40.053 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:40.053 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:40.062 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:40.062 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:40.062 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:40.074 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:40.074 [main] INFO  DataBaseTestConfig - Closing DB connection
-10:33:40.074 [main] INFO  DataBaseTestConfig - Create DB connection
-10:33:40.081 [main] INFO  DataBaseTestConfig - Closing Result Set
-10:33:40.081 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-10:33:40.082 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:28.113 [main] ERROR InputReaderUtil - Error while reading user input from Shell
-java.util.NoSuchElementException: No line found
-	at java.util.Scanner.nextLine(Scanner.java:1540) ~[?:1.8.0_231]
-	at com.parkit.parkingsystem.util.InputReaderUtil.readVehicleRegistrationNumber(InputReaderUtil.java:28) ~[classes/:?]
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:55) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:37) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:2952) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at com.parkit.parkingsystem.service.GestionExceptionTest.exceptionTest(GestionExceptionTest.java:24) ~[test-classes/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_231]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_231]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_231]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_231]
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675) ~[junit-platform-commons-1.5.1.jar:1.5.1]
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:124) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:74) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:104) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:62) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:43) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:35) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:202) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:198) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_231]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_231]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) [junit-platform-launcher-1.2.0.jar:1.2.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) [junit-platform-launcher-1.2.0.jar:1.2.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) [junit-platform-launcher-1.2.0.jar:1.2.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:132) [junit-platform-surefire-provider-1.2.0.jar:1.2.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:111) [junit-platform-surefire-provider-1.2.0.jar:1.2.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379) [surefire-booter-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340) [surefire-booter-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125) [surefire-booter-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413) [surefire-booter-2.21.0.jar:2.21.0]
-15:16:28.539 [main] INFO  DataBaseConfig - Create DB connection
-15:16:28.882 [main] INFO  DataBaseConfig - Closing Result Set
-15:16:28.882 [main] INFO  DataBaseConfig - Closing Prepared Statement
-15:16:28.883 [main] INFO  DataBaseConfig - Closing DB connection
-15:16:28.911 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:28.943 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:28.945 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:28.976 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:28.977 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:28.990 [main] INFO  DataBaseTestConfig - Closing Result Set
-15:16:28.990 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-15:16:28.991 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:28.991 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:29.002 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-15:16:29.002 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:29.003 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:29.019 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-15:16:29.019 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:31.020 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:31.034 [main] INFO  DataBaseTestConfig - Closing Result Set
-15:16:31.034 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-15:16:31.034 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:31.034 [main] INFO  DataBaseConfig - Create DB connection
-15:16:31.046 [main] INFO  DataBaseConfig - Closing Result Set
-15:16:31.046 [main] INFO  DataBaseConfig - Closing Prepared Statement
-15:16:31.046 [main] INFO  DataBaseConfig - Closing DB connection
-15:16:31.046 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:31.061 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-15:16:31.062 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:31.062 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:31.075 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-15:16:31.075 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:31.075 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:31.084 [main] INFO  DataBaseTestConfig - Closing Result Set
-15:16:31.084 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-15:16:31.084 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:31.087 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:31.112 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:31.113 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:31.124 [main] INFO  DataBaseTestConfig - Closing Result Set
-15:16:31.124 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-15:16:31.125 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:31.125 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:31.137 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-15:16:31.137 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:31.137 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:31.150 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-15:16:31.151 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:31.151 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:31.158 [main] INFO  DataBaseTestConfig - Closing Result Set
-15:16:31.159 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-15:16:31.159 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:31.162 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:31.187 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:31.188 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:31.211 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:31.212 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:31.222 [main] INFO  DataBaseTestConfig - Closing Result Set
-15:16:31.222 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-15:16:31.222 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:31.222 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:31.232 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-15:16:31.232 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:31.232 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:31.245 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-15:16:31.245 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:33.245 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:33.257 [main] INFO  DataBaseTestConfig - Closing Result Set
-15:16:33.257 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-15:16:33.257 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:33.257 [main] INFO  DataBaseConfig - Create DB connection
-15:16:33.264 [main] INFO  DataBaseConfig - Closing Result Set
-15:16:33.264 [main] INFO  DataBaseConfig - Closing Prepared Statement
-15:16:33.264 [main] INFO  DataBaseConfig - Closing DB connection
-15:16:33.264 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:33.275 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-15:16:33.276 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:33.276 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:33.287 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-15:16:33.287 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:33.287 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:33.296 [main] INFO  DataBaseTestConfig - Closing Result Set
-15:16:33.297 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-15:16:33.297 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:33.299 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:33.320 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:33.320 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:33.331 [main] INFO  DataBaseTestConfig - Closing Result Set
-15:16:33.331 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-15:16:33.331 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:33.331 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:33.342 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-15:16:33.342 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:33.342 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:33.353 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-15:16:33.353 [main] INFO  DataBaseTestConfig - Closing DB connection
-15:16:33.353 [main] INFO  DataBaseTestConfig - Create DB connection
-15:16:33.360 [main] INFO  DataBaseTestConfig - Closing Result Set
-15:16:33.360 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-15:16:33.360 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:14.708 [main] ERROR InputReaderUtil - Error while reading user input from Shell
-java.util.NoSuchElementException: No line found
-	at java.util.Scanner.nextLine(Scanner.java:1540) ~[?:1.8.0_231]
-	at com.parkit.parkingsystem.util.InputReaderUtil.readVehicleRegistrationNumber(InputReaderUtil.java:28) ~[classes/:?]
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:55) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:37) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:2952) ~[junit-jupiter-api-5.5.1.jar:5.5.1]
-	at com.parkit.parkingsystem.service.GestionExceptionTest.exceptionTest(GestionExceptionTest.java:24) ~[test-classes/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_231]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_231]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_231]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_231]
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:675) ~[junit-platform-commons-1.5.1.jar:1.5.1]
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:125) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:132) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:124) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:74) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:104) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:62) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:43) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:35) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:202) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:198) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69) ~[junit-jupiter-engine-5.5.1.jar:5.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_231]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_231]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) [junit-platform-engine-1.5.1.jar:1.5.1]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170) [junit-platform-launcher-1.2.0.jar:1.2.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154) [junit-platform-launcher-1.2.0.jar:1.2.0]
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90) [junit-platform-launcher-1.2.0.jar:1.2.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:132) [junit-platform-surefire-provider-1.2.0.jar:1.2.0]
-	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:111) [junit-platform-surefire-provider-1.2.0.jar:1.2.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379) [surefire-booter-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340) [surefire-booter-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125) [surefire-booter-2.21.0.jar:2.21.0]
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413) [surefire-booter-2.21.0.jar:2.21.0]
-13:58:15.118 [main] INFO  DataBaseConfig - Create DB connection
-13:58:15.472 [main] INFO  DataBaseConfig - Closing Result Set
-13:58:15.473 [main] INFO  DataBaseConfig - Closing Prepared Statement
-13:58:15.473 [main] INFO  DataBaseConfig - Closing DB connection
-13:58:15.503 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:15.535 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:15.538 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:15.567 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:15.568 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:15.580 [main] INFO  DataBaseTestConfig - Closing Result Set
-13:58:15.580 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-13:58:15.581 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:15.581 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:15.597 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-13:58:15.598 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:15.598 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:15.613 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-13:58:15.613 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:17.614 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:17.629 [main] INFO  DataBaseTestConfig - Closing Result Set
-13:58:17.629 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-13:58:17.629 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:17.629 [main] INFO  DataBaseConfig - Create DB connection
-13:58:17.638 [main] INFO  DataBaseConfig - Closing Result Set
-13:58:17.638 [main] INFO  DataBaseConfig - Closing Prepared Statement
-13:58:17.638 [main] INFO  DataBaseConfig - Closing DB connection
-13:58:17.638 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:17.655 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-13:58:17.656 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:17.656 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:17.669 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-13:58:17.669 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:17.669 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:17.679 [main] INFO  DataBaseTestConfig - Closing Result Set
-13:58:17.680 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-13:58:17.680 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:17.683 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:17.707 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:17.708 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:17.718 [main] INFO  DataBaseTestConfig - Closing Result Set
-13:58:17.718 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-13:58:17.719 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:17.719 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:17.733 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-13:58:17.734 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:17.734 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:17.747 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-13:58:17.747 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:17.747 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:17.755 [main] INFO  DataBaseTestConfig - Closing Result Set
-13:58:17.755 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-13:58:17.756 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:17.759 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:17.783 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:17.785 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:17.812 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:17.812 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:17.822 [main] INFO  DataBaseTestConfig - Closing Result Set
-13:58:17.823 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-13:58:17.823 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:17.823 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:17.833 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-13:58:17.833 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:17.833 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:17.846 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-13:58:17.846 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:19.847 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:19.857 [main] INFO  DataBaseTestConfig - Closing Result Set
-13:58:19.857 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-13:58:19.857 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:19.857 [main] INFO  DataBaseConfig - Create DB connection
-13:58:19.864 [main] INFO  DataBaseConfig - Closing Result Set
-13:58:19.864 [main] INFO  DataBaseConfig - Closing Prepared Statement
-13:58:19.864 [main] INFO  DataBaseConfig - Closing DB connection
-13:58:19.864 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:19.876 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-13:58:19.876 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:19.876 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:19.886 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-13:58:19.887 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:19.887 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:19.896 [main] INFO  DataBaseTestConfig - Closing Result Set
-13:58:19.896 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-13:58:19.896 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:19.897 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:19.922 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:19.923 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:19.933 [main] INFO  DataBaseTestConfig - Closing Result Set
-13:58:19.933 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-13:58:19.933 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:19.934 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:19.942 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-13:58:19.942 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:19.943 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:19.954 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-13:58:19.954 [main] INFO  DataBaseTestConfig - Closing DB connection
-13:58:19.954 [main] INFO  DataBaseTestConfig - Create DB connection
-13:58:19.962 [main] INFO  DataBaseTestConfig - Closing Result Set
-13:58:19.962 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
-13:58:19.962 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:43:30.716 [main] INFO  DataBaseConfig - Create DB connection
+18:43:31.041 [main] INFO  DataBaseConfig - Closing Result Set
+18:43:31.041 [main] INFO  DataBaseConfig - Closing Prepared Statement
+18:43:31.041 [main] INFO  DataBaseConfig - Closing DB connection
+18:43:31.082 [main] INFO  DataBaseTestConfig - Create DB connection
+18:43:31.112 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:43:31.115 [main] INFO  DataBaseTestConfig - Create DB connection
+18:43:31.143 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:43:31.144 [main] INFO  DataBaseTestConfig - Create DB connection
+18:43:31.157 [main] INFO  DataBaseTestConfig - Closing Result Set
+18:43:31.157 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:43:31.157 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:43:31.157 [main] INFO  DataBaseTestConfig - Create DB connection
+18:43:31.168 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:43:31.169 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:43:31.169 [main] INFO  DataBaseTestConfig - Create DB connection
+18:43:31.187 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:43:31.188 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:43:33.188 [main] INFO  DataBaseTestConfig - Create DB connection
+18:43:33.203 [main] INFO  DataBaseTestConfig - Closing Result Set
+18:43:33.203 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:43:33.203 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:43:33.203 [main] INFO  DataBaseConfig - Create DB connection
+18:43:33.211 [main] INFO  DataBaseConfig - Closing Result Set
+18:43:33.211 [main] INFO  DataBaseConfig - Closing Prepared Statement
+18:43:33.211 [main] INFO  DataBaseConfig - Closing DB connection
+18:43:33.212 [main] INFO  DataBaseTestConfig - Create DB connection
+18:43:33.224 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:43:33.225 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:43:33.225 [main] INFO  DataBaseTestConfig - Create DB connection
+18:43:33.237 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:43:33.237 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:43:33.238 [main] INFO  DataBaseTestConfig - Create DB connection
+18:43:33.247 [main] INFO  DataBaseTestConfig - Closing Result Set
+18:43:33.247 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:43:33.248 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:43:33.250 [main] INFO  DataBaseTestConfig - Create DB connection
+18:43:33.275 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:43:33.276 [main] INFO  DataBaseTestConfig - Create DB connection
+18:43:33.286 [main] INFO  DataBaseTestConfig - Closing Result Set
+18:43:33.286 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:43:33.286 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:43:33.287 [main] INFO  DataBaseTestConfig - Create DB connection
+18:43:33.297 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:43:33.298 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:43:33.298 [main] INFO  DataBaseTestConfig - Create DB connection
+18:43:33.312 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:43:33.312 [main] INFO  DataBaseTestConfig - Closing DB connection
+18:43:33.312 [main] INFO  DataBaseTestConfig - Create DB connection
+18:43:33.321 [main] INFO  DataBaseTestConfig - Closing Result Set
+18:43:33.322 [main] INFO  DataBaseTestConfig - Closing Prepared Statement
+18:43:33.322 [main] INFO  DataBaseTestConfig - Closing DB connection

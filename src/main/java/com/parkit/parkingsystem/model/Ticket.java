@@ -1,8 +1,5 @@
 package com.parkit.parkingsystem.model;
 
-import org.apache.commons.lang.ObjectUtils;
-
-import java.util.Calendar;
 import java.util.Date;
 
 public class Ticket {
@@ -46,7 +43,7 @@ public class Ticket {
         this.price = price;
     }
 
-    public Date getInTime() throws CloneNotSupportedException {
+    public Date getInTime() {
         Date dateInTime = inTime;
         return dateInTime;
     }
@@ -55,7 +52,7 @@ public class Ticket {
         this.inTime = new Date (inTime.getTime());
     }
 
-    public Date getOutTime() throws CloneNotSupportedException {
+    public Date getOutTime() {
         Date dateOutTime = outTime;
         return dateOutTime;
     }

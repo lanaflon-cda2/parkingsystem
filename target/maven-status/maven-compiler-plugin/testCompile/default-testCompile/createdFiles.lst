@@ -4,4 +4,3 @@ com/parkit/parkingsystem/service/GestionExceptionTest.class
 com/parkit/parkingsystem/service/ParkingServiceTest.class
 it/com/parkit/parkingsystem/ParkingDataBaseITTest.class
 com/parkit/parkingsystem/integration/config/DataBaseTestConfig.class
-it/com/parkit/parkingsystem/ParkingDataBaseBikeITTest.class

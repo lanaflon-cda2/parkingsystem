@@ -4,48 +4,56 @@ import com.parkit.parkingsystem.constants.Fare;
 import com.parkit.parkingsystem.dao.ClientDAO;
 import com.parkit.parkingsystem.model.Ticket;
 
-import java.lang.reflect.InvocationTargetException;
 
-public class FareCalculatorService extends PriceService {
+public class FareCalculatorService {
     private final ClientDAO clientDAO;
 
-<span class="fc" id="L12">    public FareCalculatorService(ClientDAO clientDAO) { this.clientDAO = clientDAO; }</span>
+<span class="fc" id="L11">    public FareCalculatorService(ClientDAO clientDAO) { this.clientDAO = clientDAO; }</span>
 
 
-    public void calculateFare(Ticket ticket) throws CloneNotSupportedException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+    public void calculateFare(Ticket ticket) {
 
-<span class="pc bpc" id="L17" title="1 of 4 branches missed.">        if ((ticket.getOutTime() == null) || (ticket.getOutTime().before(ticket.getInTime()))) {</span>
-<span class="fc" id="L18">            throw new IllegalArgumentException(&quot;Out time provided is incorrect:&quot; + ticket.getOutTime().toString());</span>
+<span class="pc bpc" id="L16" title="1 of 4 branches missed.">        if ((ticket.getOutTime() == null) || (ticket.getOutTime().before(ticket.getInTime()))) {</span>
+<span class="fc" id="L17">            throw new IllegalArgumentException(&quot;Out time provided is incorrect:&quot; + ticket.getOutTime().toString());</span>
         }
-<span class="fc" id="L20">        long inDay2 = ticket.getInTime().getTime();</span>
-<span class="fc" id="L21">        long outDay2 = ticket.getOutTime().getTime();</span>
+<span class="fc" id="L19">        long inDay2 = ticket.getInTime().getTime();</span>
+<span class="fc" id="L20">        long outDay2 = ticket.getOutTime().getTime();</span>
 
-<span class="fc" id="L23">        String vehicule = ticket.getVehicleRegNumber();</span>
+<span class="fc" id="L22">        String vehicule = ticket.getVehicleRegNumber();</span>
 
-<span class="fc" id="L25">        long durationInMinutes = Math.abs(outDay2 - inDay2) / 1000 / 60; //  Delta des 2 dates en Minutes</span>
+<span class="fc" id="L24">        long durationInMinutes = Math.abs(outDay2 - inDay2) / 1000 / 60; //  Delta des 2 dates en Minutes</span>
         //TODO: Some tests are failing here. Need to check if this logic is correct : Ok
 
-<span class="fc" id="L28">        long durationInDay = durationInMinutes / 60;</span>
-<span class="fc" id="L29">        long rest = (durationInMinutes - (durationInDay * 60)); // reste de la division pour obtenir les Minutes restantes</span>
-<span class="fc" id="L30">        double rest2 = (double) rest / 60;</span>
-<span class="fc" id="L31">        double durationConcat = durationInDay + rest2;</span>
+<span class="fc" id="L27">        long durationInDay = durationInMinutes / 60;</span>
+<span class="fc" id="L28">        long rest = (durationInMinutes - (durationInDay * 60)); // reste de la division pour obtenir les Minutes restantes</span>
+<span class="fc" id="L29">        double rest2 = (double) rest / 60;</span>
+<span class="fc" id="L30">        double durationConcat = durationInDay + rest2;</span>
 
         // Gratuite des 30eres minutes
-<span class="fc" id="L34">        durationConcat -= 0.50;</span>
-<span class="fc bfc" id="L35" title="All 2 branches covered.">        if (durationConcat &lt; 0) {</span>
-<span class="fc" id="L36">            durationConcat = 0.00;</span>
+<span class="fc" id="L33">        durationConcat -= 0.50;</span>
+<span class="fc bfc" id="L34" title="All 2 branches covered.">        if (durationConcat &lt; 0) {</span>
+<span class="fc" id="L35">            durationConcat = 0.00;</span>
         }
 
         // reduc 5% client recurrent
-<span class="fc bfc" id="L40" title="All 2 branches covered.">        if (clientDAO.getClient(vehicule)) {</span>
-<span class="fc" id="L41">            durationConcat *= Fare.RECURENT_CLIENT_REDUC;</span>
+<span class="fc bfc" id="L39" title="All 2 branches covered.">        if (clientDAO.getClient(vehicule)) {</span>
+<span class="fc" id="L40">            durationConcat *= Fare.RECURENT_CLIENT_REDUC;</span>
         }
 
-<span class="fc" id="L44">        double durationTotal = Math.round(durationConcat * (1.0 / 0.01)) / (1.0 / 0.01);</span>
+<span class="fc" id="L43">        double durationTotal = Math.round(durationConcat * (1.0 / 0.01)) / (1.0 / 0.01);</span>
 
-<span class="fc" id="L46">        double price = setPriceVehicule(durationTotal, ticket.getParkingSpot().getParkingType().toString());</span>
-<span class="fc" id="L47">        ticket.setPrice(price);</span>
+<span class="pc bpc" id="L45" title="1 of 3 branches missed.">        switch (ticket.getParkingSpot().getParkingType()){</span>
+            case CAR: {
+<span class="fc" id="L47">                ticket.setPrice(durationTotal * Fare.CAR_RATE_PER_HOUR);</span>
+<span class="fc" id="L48">                break;</span>
+            }
+            case BIKE: {
+<span class="fc" id="L51">                ticket.setPrice(durationTotal * Fare.BIKE_RATE_PER_HOUR);</span>
+<span class="fc" id="L52">                break;</span>
+            }
+<span class="nc" id="L54">            default: throw new IllegalArgumentException(&quot;Unkown Parking Type&quot;);</span>
+        }
 
-<span class="fc" id="L49">    }</span>
+<span class="fc" id="L57">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
