@@ -12,11 +12,14 @@ public class GestionExceptionTest {
 
     @Test
     public void exceptionTest() {
+
+        // Arrange
         String input = "";
         InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);
         InputReaderUtil inputexception = new InputReaderUtil();
 
+        // Act et Assert
         assertThrows(NoSuchElementException.class, inputexception::readVehicleRegistrationNumber);
     }
 

@@ -49,13 +49,17 @@ public class ParkingDataBaseITTest {
 
     @Test
     public void testParkingACarAndExit() throws InterruptedException {
+
+        // Arrange
         ParkingService parkingService = new ParkingService(inputReaderUtil, parkingSpotDAO, ticketDAO);
 
+        // Act
         parkingService.processIncomingVehicle();
         Thread.sleep(2000);
         parkingService.processExitingVehicle();
         ticket = ticketDAO.getTicket("ABCDEF");
 
+        // Assert
         assertEquals(0, ticket.getPrice());
         assertNotNull(ticket.getInTime());
         assertNotNull(ticket.getOutTime());
@@ -66,12 +70,16 @@ public class ParkingDataBaseITTest {
 
     @Test
     public void testParkingACar() {
+
+        // Arrange
         Date inTime = new Date();
         ParkingService parkingService = new ParkingService(inputReaderUtil, parkingSpotDAO, ticketDAO);
 
+        // Act
         parkingService.processIncomingVehicle();
         ticket = ticketDAO.getTicket("ABCDEF");
 
+        // Assert
         assertEquals(0, ticket.getPrice());
         assertNotNull(ticket.getInTime());
         assertNotNull(ticket.getParkingSpot());
